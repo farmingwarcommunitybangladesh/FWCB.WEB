@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clan Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FWCB Community</h1>
+            <p>Farming War Community Bangladesh</p>
+        </div>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clans.html">Clans</a></li>
+                <li><a href="discord.html">Discord & Groups</a></li>
+                <li><a href="bases.html">Bases</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">
+        <span class="home-icon">🏠</span>
+        <span class="home-text">Home</span>
+    </a>
+    
+    <main>
+        <section id="clan-details">
+            <div id="clan-details-content">
+                <p>Loading...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
+    </footer>
+    <script src="details.js"></script>
+    <script>
+        // Mobile Menu Toggle Functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (mobileMenuToggle && navMenu) {
+            mobileMenuToggle.addEventListener('click', function() {
+                mobileMenuToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            const navLinks = navMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                    mobileMenuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        }
+        
+        // Home Button Scroll Detection
+        const homeButton = document.querySelector('.home-button');
+        
+        function handleScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show home button when scrolled down more than 100px
+            if (scrollTop > 100) {
+                homeButton.classList.add('show');
+            } else {
+                homeButton.classList.remove('show');
+            }
+        }
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        
+        // Check initial scroll position
+        handleScroll();
+    </script>
+</body>
+</html>

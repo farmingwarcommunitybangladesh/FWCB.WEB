@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWCB Community Rules</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            background: #0a1625;
+            color: #d8e1ff;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+        }
+        
+        .rules-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 5%;
+        }
+        
+        .rules-header {
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.95), rgba(16, 24, 47, 0.98));
+            color: #f0f4ff;
+            padding: 70px 30px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 45px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .rules-header:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+            border-color: rgba(100, 255, 218, 0.3);
+        }
+        
+        .rules-header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #64ffda, #a5b4fc);
+        }
+        
+        .rules-header h2 {
+            margin: 0 0 20px 0;
+            font-size: 3.2em;
+            background: linear-gradient(90deg, #64ffda, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(100, 255, 218, 0.15);
+            letter-spacing: -0.8px;
+            transition: all 0.3s ease;
+            line-height: 1.2;
+            padding: 0 20px;
+            display: inline-block;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(100, 255, 218, 0.3);
+            letter-spacing: -0.5px;
+        }
+        
+        .rules-header p {
+            margin: 15px 0 0;
+            font-size: 1.3em;
+            color: #b8c2e0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .rules-section {
+            background: linear-gradient(145deg, rgba(16, 24, 47, 0.85), rgba(10, 20, 40, 0.95));
+            padding: 45px;
+            border-radius: 14px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(100, 255, 218, 0.12);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            margin-bottom: 35px;
+        }
+        
+        .rules-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+            border-color: rgba(100, 255, 218, 0.2);
+        }
+        
+        .rules-section h3 {
+            color: #64ffda;
+            font-size: 2em;
+            margin: 0 0 28px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(100, 255, 218, 0.15);
+            position: relative;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            display: inline-block;
+        }
+        
+        .rules-section h3:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #64ffda, transparent);
+        }
+            letter-spacing: -0.3px;
+        }
+        
+        .rules-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .rules-list li {
+            padding: 16px 0 16px 28px;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.08);
+            font-size: 1.1em;
+            color: #d8e1ff;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-bottom: 8px;
+            position: relative;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        
+        .rules-list li:before {
+            content: '→';
+            color: #64ffda;
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .rules-list li:hover {
+            color: #f0f4ff;
+            transform: translateX(8px);
+            text-shadow: 0 0 10px rgba(240, 244, 255, 0.3);
+        }
+        
+        .rules-list li:hover:before {
+            color: #a5b4fc;
+            transform: translateX(3px);
+        }
+        
+        .rules-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .rules-note {
+            background: linear-gradient(90deg, rgba(100, 255, 218, 0.08), rgba(100, 255, 218, 0.03));
+            border-left: 4px solid #64ffda;
+            color: #e6f1ff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .rules-note:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+        
+        .rules-note:hover:before {
+            transform: translateX(100%);
+        }
+        
+        .rules-note:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.1);
+        }
+        
+        .rules-note strong {
+            color: #64ffda;
+            font-weight: 600;
+        }
+        
+        .rules-note p {
+            margin: 0;
+            color: #e6f1ff;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+        
+        /* Mobile Responsive */
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .rules-container {
+                padding: 15px 4%;
+            }
+            
+            .rules-header {
+                padding: 50px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .rules-header h2 {
+                font-size: 2.2em;
+                line-height: 1.3;
+            }
+            
+            .rules-header p {
+                font-size: 1.1em;
+            }
+            
+            .rules-section {
+                padding: 30px 20px;
+                margin-bottom: 25px;
+            }
+            
+            .rules-section h3 {
+                font-size: 1.6em;
+                margin-bottom: 20px;
+            }
+            
+            .rules-list li {
+                font-size: 1em;
+                padding: 14px 0 14px 24px;
+            }
+            
+            .rules-note {
+                padding: 20px;
+                margin: 25px 0;
+            }
+            
+            .rules-header {
+                padding: 30px 20px;
+            }
+            
+            .rules-header h2 {
+                font-size: 2em;
+            }
+            
+            .rules-section {
+                padding: 25px 20px;
+            }
+            
+            .rules-section h3 {
+                font-size: 1.5em;
+            }
+            
+            .rules-list li {
+                padding: 12px 0;
+                font-size: 1em;
+            }
+            
+            .language-switch {
+                top: 15px !important;
+                right: 15px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .rules-header h2 {
+                font-size: 1.6em;
+            }
+            
+            .rules-header p {
+                font-size: 0.95em;
+            }
+            
+            .rules-section {
+                padding: 20px 15px;
+            }
+            
+            .rules-section h3 {
+                font-size: 1.3em;
+                padding-right: 120px;
+            }
+            
+            .language-switch {
+                top: 15px !important;
+                right: 10px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FWCB Community</h1>
+            <p>Farming War Community Bangladesh</p>
+        </div>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clans.html">Clans</a></li>
+                <li><a href="discord.html">Discord & Groups</a></li>
+                <li><a href="bases.html">Bases</a></li>
+                <li><a href="rules.html" class="active">Rules</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">
+        <span class="home-icon">🏠</span>
+        <span class="home-text">Home</span>
+    </a>
+    
+    <main>
+        <div class="rules-container">
+            <div class="rules-header">
+                <h2>🏛️ FWCB Community Rules</h2>
+                <p>Essential guidelines to maintain a respectful, organized, and thriving gaming community for all members</p>
+            </div>
+            
+            <div class="rules-section">
+                <h3>Community Guidelines</h3>
+                <ul class="rules-list">
+                    <li>Respect all community members regardless of their level or experience</li>
+                    <li>No spamming, trolling, or inappropriate content in any group</li>
+                    <li>Use English or Bengali for communication in official channels</li>
+                    <li>Share base links and strategies to help fellow clashers</li>
+                    <li>Participate actively in clan wars and clan games</li>
+                    <li>Follow your clan's specific rules and requirements</li>
+                    <li>Report any issues or concerns to community moderators</li>
+                    <li>Help new players learn and grow in the game</li>
+                    <li>Keep discussions related to Clash of Clans and gaming</li>
+                    <li>No sharing of inappropriate or offensive content</li>
+                </ul>
+                
+                <div class="rules-note">
+                    <p><strong>📌 Important Note:</strong> These rules may be updated periodically to ensure the best experience for all members. Please check back regularly for any changes. Violation of these rules may result in warnings or removal from the community.</p>
+                </div>
+            </div>
+            
+            <div class="rules-section" style="position: relative;">
+                <!-- Language Switch for GFL Rules -->
+                <div class="language-switch" style="position: absolute; top: 20px; right: 20px;">
+                    <button id="gfl-lang-en" class="lang-btn active">English</button>
+                    <button id="gfl-lang-bn" class="lang-btn">বাংলা</button>
+                </div>
+                
+                <h3>Farming War Base Design Rules</h3>
+                
+                <!-- English Content (Default) -->
+                <div id="gfl-content-en" class="language-content active">
+                    <p style="margin-bottom: 25px; color: #555; font-size: 1.05em;">Follow these guidelines when designing your base for GFL (Farming War League). Each section has specific placement requirements.</p>
+                </div>
+                
+                <!-- Bangla Content -->
+                <div id="gfl-content-bn" class="language-content">
+                    <p style="margin-bottom: 25px; color: #555; font-size: 1.05em;">GFL (Farming War League) এর জন্য আপনার বেস ডিজাইন করার সময় এই নির্দেশিকা অনুসরণ করুন। প্রতিটি সেকশনের নির্দিষ্ট প্লেসমেন্ট প্রয়োজনীয়তা রয়েছে।</p>
+                </div>
+                
+                <!-- Town Hall Section -->
+                <div style="margin-bottom: 35px;">
+                    <!-- English -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">1. TOWN HALL SECTION</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">This section should include all non-damage-dealing buildings, air defenses, air sweepers, blacksmith, pet house, spell towers and both the Eagle Artillery and the Town Hall.</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 Town Hall Placement Rules:</h5>
+                        <ul class="rules-list">
+                            <li><strong>TH11:</strong> The Town Hall and Eagle Artillery should be next to each other and touch the border</li>
+                            <li><strong>TH12+:</strong> The town hall must be in the corner with 5 spaces clear and the eagle in the opposite end with storages</li>
+                            <li><strong>TH14+:</strong> Builder huts regardless of level (with the exception of the master builder) must be together with at least a 6 tile gap from any defense/building and accessible (as a group) from at least 3 sides</li>
+                            <li><strong>TH15+:</strong> Spell towers should be set to rage mode only</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Bangla -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">১. টাউন হল সেকশন</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">এই সেকশনে সব non-damage-dealing বিল্ডিং, Air Defense, Air Sweeper, Blacksmith, Pet House, Spell Tower এবং Eagle Artillery ও Town Hall থাকবে।</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 টাউন হল প্লেসমেন্ট নিয়ম:</h5>
+                        <ul class="rules-list">
+                            <li><strong>TH11:</strong> Town Hall এবং Eagle Artillery পাশাপাশি থাকবে এবং border টাচ করবে</li>
+                            <li><strong>TH12+:</strong> Town Hall কর্নারে থাকবে ৫ টি স্পেস ক্লিয়ার রেখে এবং Eagle বিপরীত প্রান্তে Storage গুলোর সাথে থাকবে</li>
+                            <li><strong>TH14+:</strong> Builder Hut গুলো (Master Builder ছাড়া) একসাথে থাকবে কমপক্ষে ৬ টাইল গ্যাপ রেখে যেকোনো Defense/Building থেকে এবং কমপক্ষে ৩ দিক থেকে accessible হতে হবে</li>
+                            <li><strong>TH15+:</strong> Spell Tower শুধুমাত্র Rage Mode এ সেট থাকবে</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English Checklist -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ Required Buildings in Town Hall Section:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>TOWN HALL</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL STORAGES</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>EAGLE ARTILLERY</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL AIR DEFENCES</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>BOTH AIR SWEEPERS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL NON-DEFENSIVE BUILDINGS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>BOTH SPELL TOWERS (RAGE MODE)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Bangla Checklist -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ টাউন হল সেকশনে প্রয়োজনীয় বিল্ডিং:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>TOWN HALL</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব STORAGE</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>EAGLE ARTILLERY</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব AIR DEFENCE</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>দুইটি AIR SWEEPER</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব NON-DEFENSIVE BUILDING</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>দুইটি SPELL TOWER (RAGE MODE)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px; text-align: center;">
+                        <img src="images/townhallselection.jpg" alt="Town Hall Section Example" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid #e67e22;">
+                        <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Example: Proper Town Hall section with all required buildings</p>
+                    </div>
+                </div>
+                
+                <!-- King Section -->
+                <div style="margin-bottom: 35px;">
+                    <!-- English -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">2. KING SECTION</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">This section must have cannons, mortars, xbows (that are set to "ground"), empty clan castle, bomb towers and the Barbarian King. This section will be easy to take out with a few minions or other flying troops.</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 King Section Placement Rules:</h5>
+                        <ul class="rules-list">
+                            <li>All X-Bows must be set to <strong>Ground Mode</strong> only</li>
+                            <li>Clan Castle must be <strong>empty</strong> (no troops inside)</li>
+                            <li>This section should be vulnerable to air attacks (minions, balloons)</li>
+                            <li>No air-targeting defenses allowed in this section</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Bangla -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">২. King সেকশন</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">এই সেকশনে Cannon, Mortar, X-Bow (Ground Mode এ সেট), খালি Clan Castle, Bomb Tower এবং Barbarian King থাকবে। এই সেকশন কয়েকটি Minion বা অন্যান্য flying troops দিয়ে সহজেই নেওয়া যাবে।</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 King সেকশন প্লেসমেন্ট নিয়ম:</h5>
+                        <ul class="rules-list">
+                            <li>সব X-Bow অবশ্যই <strong>Ground Mode</strong> এ সেট থাকবে</li>
+                            <li>Clan Castle অবশ্যই <strong>খালি</strong> থাকবে (ভিতরে কোনো troops থাকবে না)</li>
+                            <li>এই সেকশন air attack এর জন্য vulnerable হবে (Minion, Balloon)</li>
+                            <li>এই সেকশনে কোনো air-targeting defense থাকবে না</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English Checklist -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ Required Buildings in King Section:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>KING (BARBARIAN KING)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL CANNONS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>CLAN CASTLE (EMPTY)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL MORTARS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>BOTH BOMB TOWERS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL X-BOWS (GROUND MODE)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Bangla Checklist -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ King সেকশনে প্রয়োজনীয় বিল্ডিং:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>KING (BARBARIAN KING)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব CANNON</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>CLAN CASTLE (খালি)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব MORTAR</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>দুইটি BOMB TOWER</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব X-BOW (GROUND MODE)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px; text-align: center;">
+                        <img src="images/kingselection.jpg" alt="King Section Example" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid #e67e22;">
+                        <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Example: King section with ground-only defenses (vulnerable to air attacks)</p>
+                    </div>
+                </div>
+                
+                <!-- Queen Section -->
+                <div style="margin-bottom: 35px;">
+                    <!-- English -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">3. QUEEN SECTION</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">This section must have wizard towers, teslas, archer towers, Archer Queen, Grand Warden, Royal Champion, scattershots, monolith and inferno towers (set to "single" mode). The Archer Queen and both infernos must have one edge completely exposed. The monolith and scattershots (side by side) should be on the edge of the map. A building directly next to the Queen, Royal Champion or infernos cannot be more than one tile ahead. This section should be moderately easy to take out with a few giants, wizards, or with barbs, archers, and a heal spell. Walls should not hinder troop deployment around this section.</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 Queen Section Placement Rules:</h5>
+                        <ul class="rules-list">
+                            <li>Archer Queen and both Inferno Towers must have <strong>one edge completely exposed</strong></li>
+                            <li>Monolith and Scattershots must be placed <strong>side by side on the edge of the map</strong></li>
+                            <li>All Inferno Towers must be set to <strong>Single Mode</strong></li>
+                            <li>Buildings next to Queen, Royal Champion or Infernos cannot be more than <strong>one tile ahead</strong></li>
+                            <li>Walls should not hinder troop deployment around this section</li>
+                            <li>Section should be accessible for ground attacks (giants, wizards, barbs + heal spell)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Bangla -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">৩. Queen সেকশন</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">এই সেকশনে Wizard Tower, Tesla, Archer Tower, Archer Queen, Grand Warden, Royal Champion, Scattershot, Monolith এবং Inferno Tower (Single Mode এ সেট) থাকবে। Archer Queen এবং দুইটি Inferno এর একটি edge সম্পূর্ণ exposed থাকবে। Monolith এবং Scattershot পাশাপাশি map এর edge এ থাকবে। Queen, Royal Champion বা Inferno এর পাশের building এক টাইলের বেশি সামনে থাকতে পারবে না। এই সেকশন কয়েকটি Giant, Wizard বা Barb, Archer + Heal Spell দিয়ে মোটামুটি সহজে নেওয়া যাবে। Wall যেন troop deployment এ বাধা না দেয়।</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 Queen সেকশন প্লেসমেন্ট নিয়ম:</h5>
+                        <ul class="rules-list">
+                            <li>Archer Queen এবং দুইটি Inferno Tower এর <strong>একটি edge সম্পূর্ণ exposed</strong> থাকবে</li>
+                            <li>Monolith এবং Scattershot <strong>পাশাপাশি map এর edge এ</strong> থাকবে</li>
+                            <li>সব Inferno Tower অবশ্যই <strong>Single Mode</strong> এ সেট থাকবে</li>
+                            <li>Queen, Royal Champion বা Inferno এর পাশের building <strong>এক টাইলের বেশি সামনে</strong> থাকতে পারবে না</li>
+                            <li>Wall যেন এই সেকশনে troop deployment এ বাধা না দেয়</li>
+                            <li>সেকশন ground attack এর জন্য accessible হবে (Giant, Wizard, Barb + Heal Spell)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English Checklist -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ Required Buildings in Queen Section:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL TESLAS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ARCHER QUEEN</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>GRAND WARDEN</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ROYAL CHAMPION</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL WIZARD TOWERS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL ARCHER TOWERS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>BOTH SCATTERSHOTS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>BOTH FIRE SPITTER (ANY DIRECTION)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>EVERY INFERNO TOWERS (SINGLE MODE)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Bangla Checklist -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ Queen সেকশনে প্রয়োজনীয় বিল্ডিং:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব TESLA</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ARCHER QUEEN</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>GRAND WARDEN</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ROYAL CHAMPION</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব WIZARD TOWER</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব ARCHER TOWER</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>দুইটি SCATTERSHOT</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>দুইটি FIRE SPITTER (যেকোনো দিকে)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব INFERNO TOWER (SINGLE MODE)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px; text-align: center;">
+                        <img src="images/queenselection.jpg" alt="Queen Section Example" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid #e67e22;">
+                        <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Example: Queen section with exposed edges and proper hero placement</p>
+                    </div>
+                </div>
+                
+                <!-- Traps Section -->
+                <div style="margin-bottom: 35px;">
+                    <!-- English -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">4. TRAP'S SECTION</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">This section should be completely walled in and contain all the traps except for hidden teslas, which should be in the Queen section. Skeleton traps can be air or ground, but all air traps cannot overlap King's section, and ground traps cannot overlap the town hall or Queen's sections.</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 Trap Section Placement Rules:</h5>
+                        <ul class="rules-list">
+                            <li>All traps must be <strong>completely surrounded by walls</strong></li>
+                            <li>All Skeleton Traps should be set to <strong>Air Mode</strong></li>
+                            <li><strong>Hidden Teslas are NOT in this section</strong> - they belong in Queen Section</li>
+                            <li>Air traps <strong>cannot overlap</strong> with King's section</li>
+                            <li>Ground traps <strong>cannot overlap</strong> with Town Hall or Queen's sections</li>
+                            <li>This section should be a dedicated trap compartment</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Bangla -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h4 style="color: #64ffda; font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(100, 255, 218, 0.2); position: relative; font-weight: 600; letter-spacing: -0.3px;">৪. Trap সেকশন</h4>
+                        
+                        <div style="background: rgba(100, 255, 218, 0.1); border-left: 4px solid #64ffda; padding: 20px; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                            <p style="margin: 0; color: #856404; font-weight: 500;">এই সেকশন সম্পূর্ণভাবে wall দিয়ে ঘেরা থাকবে এবং Hidden Tesla ছাড়া সব trap থাকবে। Hidden Tesla গুলো Queen সেকশনে থাকবে। Skeleton Trap air বা ground হতে পারে, কিন্তু সব air trap King সেকশনের সাথে overlap করতে পারবে না এবং ground trap Town Hall বা Queen সেকশনের সাথে overlap করতে পারবে না।</p>
+                        </div>
+                        
+                        <h5 style="color: #2c3e50; font-size: 1.2em; margin: 20px 0 12px 0;">📋 Trap সেকশন প্লেসমেন্ট নিয়ম:</h5>
+                        <ul class="rules-list">
+                            <li>সব trap অবশ্যই <strong>সম্পূর্ণভাবে wall দিয়ে ঘেরা</strong> থাকবে</li>
+                            <li>সব Skeleton Trap <strong>Air Mode</strong> এ সেট থাকবে</li>
+                            <li><strong>Hidden Tesla এই সেকশনে নেই</strong> - তারা Queen সেকশনে থাকবে</li>
+                            <li>Air trap King সেকশনের সাথে <strong>overlap করতে পারবে না</strong></li>
+                            <li>Ground trap Town Hall বা Queen সেকশনের সাথে <strong>overlap করতে পারবে না</strong></li>
+                            <li>এই সেকশন একটি dedicated trap compartment হবে</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English Checklist -->
+                    <div id="gfl-content-en" class="language-content active">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ Required Traps in Trap Section:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL TRAPS (SURROUNDED BY WALLS)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>ALL SKELETON TRAPS (AIR MODE)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>GIANT BOMBS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>SPRING TRAPS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>AIR BOMBS</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>SEEKING AIR MINES</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>TORNADO TRAP</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #e74c3c; font-size: 1.2em; margin-right: 8px;">✗</span>
+                                    <strong style="color: #e74c3c;">HIDDEN TESLAS (IN QUEEN SECTION)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Bangla Checklist -->
+                    <div id="gfl-content-bn" class="language-content">
+                        <h5 style="color: #a5b4fc; font-size: 1.3em; margin: 35px 0 20px 0; font-weight: 600; position: relative; padding-left: 20px; border-left: 3px solid #64ffda;">✅ Trap সেকশনে প্রয়োজনীয় Trap:</h5>
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 25px; border-radius: 8px; border: 1px solid rgba(100, 255, 218, 0.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব TRAP (WALL দিয়ে ঘেরা)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>সব SKELETON TRAP (AIR MODE)</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>GIANT BOMB</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>SPRING TRAP</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>AIR BOMB</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>SEEKING AIR MINE</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #27ae60; font-size: 1.2em; margin-right: 8px;">✓</span>
+                                    <strong>TORNADO TRAP</strong>
+                                </li>
+                                <li style="padding: 12px 15px; border-radius: 6px; background: rgba(100, 255, 218, 0.05); border: 1px solid rgba(100, 255, 218, 0.1); transition: all 0.3s ease; color: #e6f1ff; font-size: 0.95em; display: flex; align-items: center;">
+                                    <span style="color: #e74c3c; font-size: 1.2em; margin-right: 8px;">✗</span>
+                                    <strong style="color: #e74c3c;">HIDDEN TESLA (QUEEN সেকশনে)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px; text-align: center;">
+                        <img src="images/trapselection.jpg" alt="Traps Section Example" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid #e67e22;">
+                        <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Example: Trap compartment completely walled in with skeleton traps in air mode</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rules-section">
+                <h3>Donation Rules</h3>
+                <ul class="rules-list">
+                    <li>Donate what is requested in clan chat</li>
+                    <li>Maintain a healthy donation ratio</li>
+                    <li>Donate max level troops when possible</li>
+                    <li>Be active in filling donation requests</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // GFL Language Switch Functionality
+        const gflLangEnBtn = document.getElementById('gfl-lang-en');
+        const gflLangBnBtn = document.getElementById('gfl-lang-bn');
+        const gflContentEnAll = document.querySelectorAll('#gfl-content-en');
+        const gflContentBnAll = document.querySelectorAll('#gfl-content-bn');
+        
+        if (gflLangEnBtn && gflLangBnBtn) {
+            gflLangEnBtn.addEventListener('click', function() {
+                gflLangEnBtn.classList.add('active');
+                gflLangBnBtn.classList.remove('active');
+                
+                // Show all English content
+                gflContentEnAll.forEach(function(el) {
+                    el.classList.add('active');
+                });
+                
+                // Hide all Bangla content
+                gflContentBnAll.forEach(function(el) {
+                    el.classList.remove('active');
+                });
+            });
+            
+            gflLangBnBtn.addEventListener('click', function() {
+                gflLangBnBtn.classList.add('active');
+                gflLangEnBtn.classList.remove('active');
+                
+                // Hide all English content
+                gflContentEnAll.forEach(function(el) {
+                    el.classList.remove('active');
+                });
+                
+                // Show all Bangla content
+                gflContentBnAll.forEach(function(el) {
+                    el.classList.add('active');
+                });
+            });
+        }
+        
+        // Mobile Menu Toggle Functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (mobileMenuToggle && navMenu) {
+            mobileMenuToggle.addEventListener('click', function() {
+                mobileMenuToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            const navLinks = navMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                    mobileMenuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        }
+        
+        // Home Button Scroll Detection
+        const homeButton = document.querySelector('.home-button');
+        
+        function handleScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show home button when scrolled down more than 100px
+            if (scrollTop > 100) {
+                homeButton.classList.add('show');
+            } else {
+                homeButton.classList.remove('show');
+            }
+        }
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        
+        // Check initial scroll position
+        handleScroll();
+    </script>
+</body>
+</html>

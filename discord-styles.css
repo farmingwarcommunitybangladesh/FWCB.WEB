@@ -1,0 +1,883 @@
+/* Discord & Groups Page Styles */
+
+/* Base styles for all devices */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e6f1ff;
+    background: #0a192f;
+    margin: 0;
+    padding: 0;
+    background: #0a192f;
+}
+
+/* Main Container */
+#clan-discord-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin: 50px 0 30px;
+    position: relative;
+    padding: 0 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    font-size: 2.2em;
+    color: #64ffda;
+    margin: 0 auto 10px;
+    position: relative;
+    display: block;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #64ffda, transparent);
+    bottom: -10px;
+    left: 20%;
+    border-radius: 3px;
+}
+
+.section-header p {
+    color: #8892b0;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+}
+
+/* Discord Box Styling */
+.discord-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    padding: 40px 25px;
+    text-align: center;
+    margin: 30px auto;
+    min-height: 320px;
+    width: 100%;
+    max-width: 1000px;
+    border: 2px solid rgba(100, 255, 218, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(6px);
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.discord-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(100, 255, 218, 0.15);
+    border-color: rgba(100, 255, 218, 0.6);
+}
+
+.discord-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: brightness(0.3) contrast(1.1) saturate(1.1) blur(2px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.discord-box:hover img {
+    filter: brightness(0.4) contrast(1.1) saturate(1.1) blur(0.5px);
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+.discord-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg, 
+        rgba(10, 25, 47, 0.9) 0%, 
+        rgba(15, 40, 80, 0.85) 50%,
+        rgba(8, 20, 40, 0.92) 100%
+    );
+    z-index: 2;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(1px);
+}
+
+.discord-box:hover::before {
+    background: linear-gradient(
+        145deg, 
+        rgba(14, 35, 65, 0.8) 0%, 
+        rgba(18, 75, 140, 0.75) 50%,
+        rgba(10, 25, 47, 0.85) 100%
+    );
+}
+
+/* Add a subtle shine effect on hover */
+.discord-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: 0.6s;
+    z-index: 3;
+}
+
+.discord-box:hover::after {
+    left: 100%;
+}
+
+.discord-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.discord-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.9) 0%, rgba(23, 42, 69, 0.8) 100%);
+    z-index: 1;
+}
+
+.discord-box h2,
+.discord-box p,
+.discord-box h2 {
+    position: relative;
+    z-index: 3;
+    color: #64ffda;
+    font-size: 2.2em;
+    margin: 0 0 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 0 20px;
+}
+
+.discord-box p {
+    position: relative;
+    z-index: 3;
+    color: #ccd6f6;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    line-height: 1.7;
+    padding: 0 20px;
+}
+
+/* Social Media Buttons in Main Box */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.discord-box .join-btn {
+    padding: 10px 16px;
+    font-size: 0.9em;
+    min-width: 140px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    transform: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+    flex: 0 1 auto;
+    max-width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.join-btn i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* Button Colors */
+.discord-join-btn {
+    background: #5865F2;
+    color: white !important;
+}
+
+.facebook-join-btn {
+    background: #1877F2;
+    color: white !important;
+}
+
+.messenger-join-btn {
+    background: #006AFF;
+    color: white !important;
+}
+
+/* Button Colors */
+.discord-join-btn {
+    background: #5865F2;
+    color: white !important;
+}
+
+.facebook-join-btn {
+    background: #1877F2;
+    color: white !important;
+}
+
+.messenger-join-btn {
+    background: #006AFF;
+    color: white !important;
+}
+
+.band-join-btn {
+    background: #00C73D;  /* Official Band green */
+    color: white !important;
+    background: linear-gradient(135deg, #00C73D 0%, #00A83B 100%);
+    border: 1px solid #00A83B;
+}
+
+.band-join-btn:hover {
+    background: #00A83B;
+    box-shadow: 0 4px 12px rgba(0, 167, 59, 0.4);
+}
+
+/* Hover Effects */
+.join-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+}
+
+.join-btn:active {
+    transform: translateY(1px) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Button Shine Effect */
+.join-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+    z-index: -1;
+}
+
+.join-btn:hover::after {
+    left: 100%;
+    opacity: 1;
+}
+
+.discord-box p {
+    color: #e6f1ff;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccd6f6;
+    max-width: 600px;
+}
+.discord-box:hover h2 {
+    color: #8afff0;
+    text-shadow: 0 0 20px rgba(138, 255, 240, 0.6);
+    transform: translateY(-2px);
+}
+
+.discord-box:hover p {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(230, 241, 255, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Add a subtle border animation */
+@keyframes borderPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(100, 255, 218, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(100, 255, 218, 0);
+    }
+}
+
+.discord-box {
+    animation: borderPulse 3s infinite;
+    overflow: hidden;
+}
+
+.discord-box:hover {
+    animation: none;
+}
+
+/* Section Header Styling */
+.section-header {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.section-header h2 {
+    display: inline-block;
+    font-size: 2.8em;
+    color: #64ffda;
+    margin: 0 0 30px 0;
+    padding: 0 30px 15px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #64ffda, transparent);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.section-header p {
+    color: #a8b2d1;
+    font-size: 1.15em;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+
+.clan-discord-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px auto 40px;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Clan Card Styling - Landscape Layout */
+.clan-discord-card {
+    background: rgba(10, 25, 47, 0.9);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.15);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: visible;
+    max-width: 100%;
+    min-height: 90px;
+}
+
+.clan-discord-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: rgba(100, 255, 218, 0.6);
+    background: rgba(10, 25, 47, 0.9);
+}
+
+.clan-discord-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    border: 2px solid rgba(100, 255, 218, 0.5);
+    margin-right: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    background: rgba(20, 40, 60, 0.7);
+    padding: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clan-discord-name {
+    color: #64ffda;
+    font-size: 1.1em;
+    font-weight: 600;
+    flex-grow: 1;
+    margin: 0 15px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+    transition: all 0.3s ease;
+    padding: 4px 0;
+}
+
+.clan-discord-join {
+    flex-shrink: 0;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* Clan Discord Join Button - Perfectly Centered Text */
+.clan-discord-card .join-btn.discord-join-btn {
+    min-width: 140px;
+    height: 40px;
+    padding: 0 40px 0 24px; /* Keep existing padding */
+    font-size: 1em;
+    font-weight: 500;
+    background: #5865F2 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(88, 101, 242, 0.3) !important;
+    box-sizing: border-box;
+    line-height: 1;
+    white-space: nowrap;
+    /* Center the text by adjusting its position */
+    padding-left: 0;
+    padding-right: 0;
+    text-indent: -8px; /* Fine-tune this value to center the text */
+}
+
+/* Arrow icon - Fixed Position */
+.clan-discord-card .join-btn.discord-join-btn::after {
+    content: '→';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1em;
+    font-weight: 800;
+    opacity: 0.9;
+    transition: all 0.2s ease;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+/* Remove any underline from links */
+.clan-card .join-btn.discord-join-btn,
+.clan-card .join-btn.discord-join-btn:hover,
+.clan-card .join-btn.discord-join-btn:focus {
+    text-decoration: none !important;
+}
+
+/* Discord Button Specific */
+.clan-card .join-btn.discord-join-btn.discord-join-btn {
+    background: #5865F2;
+    border: 2px solid #4752c4;
+    padding-right: 30px;
+}
+
+/* Hover Effect */
+.clan-discord-card .join-btn.discord-join-btn:hover {
+    background: #4752c4 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(88, 101, 242, 0.5) !important;
+    letter-spacing: 0.5px;
+}
+
+.clan-discord-card .join-btn.discord-join-btn:hover::after {
+    transform: translate(4px, -50%);
+    opacity: 1;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+/* Active/Pressed State */
+.clan-discord-card .join-btn.discord-join-btn:active {
+    transform: translateY(0) scale(0.98) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    background: #3a45a5 !important;
+}
+
+/* Discord Button Hover */
+.clan-card .join-btn.discord-join-btn.discord-join-btn:hover {
+    background: #4752c4;
+    box-shadow: 0 4px 12px rgba(88, 101, 242, 0.4);
+}
+
+.telegram-join-btn:hover {
+    background: linear-gradient(45deg, #0077B5, #1E96C8);
+    box-shadow: 0 6px 20px rgba(0, 136, 204, 0.3);
+}
+
+/* Tablet and Mobile Styles */
+@media (max-width: 1024px) {
+    .clan-discord-card {
+        padding: 25px 15px;
+    }
+    
+    .clan-discord-logo {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .join-btn {
+        padding: 10px 24px;
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .discord-box {
+        padding: 30px 20px;
+    }
+    
+    .discord-box h2 {
+        font-size: 2.2em;
+    }
+    
+    .discord-box p {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+    }
+}
+
+/* Hover Effects */
+.clan-discord-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.1);
+    border-color: rgba(100, 255, 218, 0.4);
+    background: rgba(10, 25, 47, 0.9);
+}
+
+.clan-discord-card:hover .clan-discord-logo {
+    transform: scale(1.05);
+    box-shadow: 0 3px 12px rgba(100, 255, 218, 0.3);
+}
+
+/* Button Hover Effect */
+.clan-card .join-btn.discord-join-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255,255,255,0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.clan-card .join-btn.discord-join-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(88, 101, 242, 0.4);
+}
+
+.clan-card .join-btn.discord-join-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(88, 101, 242, 0.4);
+}
+
+.clan-card .join-btn.discord-join-btn:hover::before {
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .clan-discord-card .join-btn.discord-join-btn {
+        min-width: 120px;
+        height: 36px;
+        padding: 0 28px 0 12px;
+        font-size: 0.9em;
+        margin: 0 auto;
+        border-radius: 4px;
+        text-indent: -6px; /* Adjust for mobile */
+    
+    .clan-discord-card .join-btn.discord-join-btn::after {
+        font-size: 1em;
+        right: 8px;
+    }
+    
+    .clan-discord-join {
+        margin-left: 8px;
+    }
+    
+    .btn-group {
+        gap: 8px;
+        padding: 0 10px;
+    }
+    
+    .discord-box p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-group .join-btn {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+    
+    .clan-discord-card {
+        padding: 10px 12px;
+    }
+    
+    .clan-discord-logo {
+        width: 45px;
+        height: 45px;
+        margin-right: 12px;
+    }
+    
+    .clan-discord-name {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+    
+    .clan-card .join-btn.discord-join-btn {
+        min-width: 90px;
+        padding: 5px 10px;
+        font-size: 0.85em;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-group .join-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .discord-box h2 {
+        padding-top: 30px;
+        font-size: 2em;
+    }
+    
+    .discord-box p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .clan-discord-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .clan-discord-card {
+        min-height: 280px;
+        padding: 25px 15px;
+    }
+    
+    .clan-discord-logo {
+        width: 85px;
+        height: 85px;
+    }
+    
+    .clan-discord-name {
+        font-size: 1.2em;
+        margin: 10px 0 15px;
+    }
+    
+    .join-btn {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 768px) {
+    .clan-discord-grid {
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .clan-discord-card {
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        min-height: 80px;
+    }
+    
+    .clan-discord-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        padding: 3px;
+    }
+    
+    .clan-card .join-btn.discord-join-btn {
+        min-width: 100px;
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+    }
+    
+    .clan-discord-name {
+        font-size: 1.1em;
+    }
+    
+    .discord-box {
+        min-height: 280px;
+        padding: 25px 15px;
+        margin: 20px auto;
+    }
+    
+    .discord-box h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+
+@media (max-width: 576px) {
+    .clan-discord-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    
+    .clan-discord-card {
+        min-height: 260px;
+        padding: 20px 10px;
+    }
+    
+    .clan-discord-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .clan-discord-name {
+        font-size: 1.1em;
+        margin: 10px 0 15px;
+    }
+    
+    .join-btn {
+        padding: 9px 18px;
+        font-size: 0.9em;
+        min-width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .discord-box h2 {
+        font-size: 1.8em;
+        padding-top: 25px;
+    }
+    
+    .section-header h2 {
+        font-size: 2em !important;
+    }
+    
+    .clan-discord-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .clan-discord-card {
+        min-height: auto;
+        padding: 15px;
+    }
+    
+    .clan-discord-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .join-btn {
+        padding: 10px 24px;
+        font-size: 0.9em;
+        min-width: 120px;
+    }
+}
+}

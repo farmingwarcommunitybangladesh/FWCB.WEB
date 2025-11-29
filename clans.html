@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Elite Clans - Farming War Bangladesh Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>FWCB Community</h1>
+        <p>Farming War Community Bangladesh</p>
+    </div>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clans.html" class="active">Clans</a></li>
+            <li><a href="discord.html">Discord & Groups</a></li>
+            <li><a href="bases.html">Bases</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Button -->
+<a href="index.html" class="home-button">
+    <span class="home-icon">🏠</span>
+    <span class="home-text">Home</span>
+</a>
+
+<main>
+    <section id="clans" class="clans-section">
+        <h2>Our Elite Clans</h2>
+        <div class="clan-grid" id="clan-list">
+            <p>Loading Clan Data...</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    // Home Button Scroll Detection
+    const homeButton = document.querySelector('.home-button');
+    
+    function handleScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Show home button when scrolled down more than 100px
+        if (scrollTop > 100) {
+            homeButton.classList.add('show');
+        } else {
+            homeButton.classList.remove('show');
+        }
+    }
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Check initial scroll position
+    handleScroll();
+</script>
+</body>
+</html>
