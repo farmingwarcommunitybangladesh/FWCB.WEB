@@ -1,245 +1,125 @@
 <!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - FWCB Community</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about-styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* Animation for content */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .about-content > * {
-            animation: fadeInUp 0.6s ease-out forwards;
-            opacity: 0;
-        }
-        
-        .about-content > *:nth-child(1) { animation-delay: 0.1s; }
-        .about-content > *:nth-child(2) { animation-delay: 0.3s; }
-        .stats-box { animation-delay: 0.5s !important; }
-    </style>
-</head>
-<body>
-    <header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | FWCB</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="glass-panel">
         <div class="logo">
-            <h1>FWCB Community</h1>
-            <p>Farming War Community Bangladesh</p>
+          <span class="logo-text">FW<span class="highlight">CB</span></span>
         </div>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav-menu" id="nav-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#clans">Clans</a></li>
-                <li><a href="discord.html">Discord & Groups</a></li>
-                <li><a href="bases.html">Bases</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+          </li>
+          <li>
+            <a href="clans.html"><i class="ri-shield-star-line"></i> Clans</a>
+          </li>
+          <li>
+            <a href="discord.html"><i class="ri-discord-line"></i> Social</a>
+          </li>
+          <li>
+            <a href="bases.html"><i class="ri-layout-masonry-line"></i> Bases</a>
+          </li>
+          <li>
+            <a href="rules.html"><i class="ri-book-open-line"></i> Rules</a>
+          </li>
+          <li>
+            <a href="about.html" class="active"><i class="ri-team-line"></i> About</a>
+          </li>
+        </ul>
+        <div class="mobile-toggle"><i class="ri-menu-4-line"></i></div>
+      </nav>
     </header>
-    
-    <!-- Home Button -->
-    <a href="index.html" class="home-button">
-        <span class="home-icon">🏠</span>
-        <span class="home-text">Home</span>
-    </a>
-    
+
     <main>
-        <section id="about">
-            <div class="about-container">
-                <div class="about-header">
-                    <h1>About FWCB Community</h1>
-                    <p>Uniting Clash of Clans players across Bangladesh with passion and strategy</p>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <!-- Language Switch Button -->
-                        <div class="language-switch">
-                            <button id="lang-en" class="lang-btn active">English</button>
-                            <button id="lang-bn" class="lang-btn">বাংলা</button>
-                        </div>
-                        
-                        <!-- English Content (Default) -->
-                        <div id="content-en" class="language-content active">
-                            <h4>About Us</h4>
-                            <p>Farming War Community Bangladesh (FWCB) is the largest and most active Clash of Clans community in Bangladesh. We are a powerful network of 25+ elite clans, where thousands of players participate together in farming, wars, and CWL.</p>
-                            
-                            <h4>Our Mission</h4>
-                            <p>Our main goal is to unite Bangladeshi Clash of Clans players on a well-organized platform, where everyone can learn, play, and achieve victory together. We believe that together we are stronger.</p>
-                            
-                            <h4>Why Join FWCB?</h4>
-                            <ul>
-                                <li>✓ 25+ active and competitive clans</li>
-                                <li>✓ Regular Clan War League (CWL) and Clan Wars</li>
-                                <li>✓ Weekly Clan Capital Raids</li>
-                                <li>✓ Guidance and support from experienced players</li>
-                                <li>✓ Friendly and helpful community</li>
-                                <li>✓ Active communication on Discord, Facebook, and Messenger groups</li>
-                            </ul>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">The <span class="highlight">Alliance</span></h1>
+          <p class="page-subtitle">Uniting Clash of Clans players across Bangladesh.</p>
+        </div>
+      </section>
 
-                            <h4>Contact Us</h4>
-                            <p>Use the buttons below to directly contact our community leader:</p>
-                        </div>
-                        
-                        <!-- Bangla Content (Hidden by default) -->
-                        <div id="content-bn" class="language-content">
-                            <h4>আমাদের সম্পর্কে</h4>
-                            <p>Farming War Community Bangladesh (FWCB) হলো বাংলাদেশের সবচেয়ে বড় এবং সক্রিয় Clash of Clans কমিউনিটি। আমরা ২৫+ টিরও বেশি এলিট ক্ল্যান নিয়ে গঠিত একটি শক্তিশালী নেটওয়ার্ক, যেখানে হাজারো খেলোয়াড় একসাথে ফার্মিং, ওয়ার এবং CWL-এ অংশগ্রহণ করে।</p>
-                            
-                            <h4>আমাদের লক্ষ্য</h4>
-                            <p>আমাদের মূল লক্ষ্য হলো বাংলাদেশী Clash of Clans খেলোয়াড়দের একটি সুসংগঠিত প্ল্যাটফর্মে একত্রিত করা, যেখানে সবাই একসাথে শিখতে, খেলতে এবং বিজয় অর্জন করতে পারে। আমরা বিশ্বাস করি যে একতাবদ্ধভাবে আমরা আরও শক্তিশালী।</p>
-                            
-                            <h4>কেন FWCB তে যোগ দেবেন?</h4>
-                            <ul>
-                                <li>✓ ২৫+ টি সক্রিয় এবং প্রতিযোগিতামূলক ক্ল্যান</li>
-                                <li>✓ নিয়মিত Clan War League (CWL) এবং Clan Wars</li>
-                                <li>✓ সাপ্তাহিক Clan Capital Raids</li>
-                                <li>✓ অভিজ্ঞ খেলোয়াড়দের থেকে গাইডেন্স এবং সাপোর্ট</li>
-                                <li>✓ ফ্রেন্ডলি এবং সাহায্যকারী কমিউনিটি</li>
-                                <li>✓ Discord, Facebook এবং Messenger গ্রুপে সক্রিয় যোগাযোগ</li>
-                            </ul>
-
-                            <h4>যোগাযোগ করুন</h4>
-                            <p>আমাদের কমিউনিটি লিডারের সাথে সরাসরি যোগাযোগ করতে নিচের বাটনগুলো ব্যবহার করুন:</p>
-                        </div>
-                        
-                        <div class="contact-buttons">
-                            <a href="https://chat.whatsapp.com/Kj6wwItrRka1wB98epbBoK?mode=ems_copy_t" target="_blank" class="contact-btn whatsapp-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                                </svg>
-                                WhatsApp
-                            </a>
-                            <a href="https://www.facebook.com/habibcocbd" target="_blank" class="contact-btn facebook-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                </svg>
-                                Facebook
-                            </a>
-                            <a href="https://band.us/@cocbangladesh" target="_blank" class="contact-btn band-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M7.8 2.8C5.2 2.8 3 5 3 7.6v8.8c0 2.6 2.2 4.8 4.8 4.8h8.4c2.6 0 4.8-2.2 4.8-4.8V7.6c0-2.6-2.2-4.8-4.8-4.8H7.8zm8.4 1.6c1.8 0 3.2 1.4 3.2 3.2v8.8c0 1.8-1.4 3.2-3.2 3.2H7.8c-1.8 0-3.2-1.4-3.2-3.2V7.6c0-1.8 1.4-3.2 3.2-3.2h8.4zM12 7.2c-2.6 0-4.8 2.2-4.8 4.8s2.2 4.8 4.8 4.8 4.8-2.2 4.8-4.8-2.2-4.8-4.8-4.8zm0 1.6c1.8 0 3.2 1.4 3.2 3.2s-1.4 3.2-3.2 3.2-3.2-1.4-3.2-3.2 1.4-3.2 3.2-3.2z"/>
-                                </svg>
-                                Band
-                            </a>
-                            <a href="https://t.me/fwcbhelp" target="_blank" class="contact-btn telegram-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                                </svg>
-                                Telegram
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="about-image">
-                        <img src="images/fwcb.jpeg" alt="FWCB Community">
-                        <div class="stats-box">
-                            <div class="stat-item">
-                                <h5>25+</h5>
-                                <p>Active Clans</p>
-                            </div>
-                            <div class="stat-item">
-                                <h5>1000+</h5>
-                                <p>Members</p>
-                            </div>
-                            <div class="stat-item">
-                                <h5>24/7</h5>
-                                <p>Support</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="about-content" style="padding-bottom: 80px">
+        <div class="container">
+          <div class="glass-panel text-block">
+            <!-- Language Toggles -->
+            <div style="display: flex; gap: 10px; margin-bottom: 30px">
+              <button onclick="switchLang('en')" class="btn-neon" style="padding: 8px 16px; font-size: 0.8rem">English</button>
+              <button onclick="switchLang('bn')" class="btn-ghost" style="padding: 8px 16px; font-size: 0.8rem">বাংলা</button>
             </div>
-        </section>
+
+            <!-- English Content -->
+            <div id="content-en">
+              <h3>Our Mission</h3>
+              <p>
+                Farming War Community Bangladesh (FWCB) is the largest and most active Clash of Clans community in Bangladesh. We are a powerful
+                network of 25+ elite clans, where thousands of players participate together in farming, wars, and CWL.
+              </p>
+              <p>Our main goal is to unite Bangladeshi players on a well-organized platform where everyone can learn, play, and win together.</p>
+
+              <h3>Why Join Us?</h3>
+              <ul>
+                <li>25+ active and competitive clans</li>
+                <li>Regular Clan War League (CWL) & Wars</li>
+                <li>Weekly Clan Capital Raids</li>
+                <li>Guidance from experienced veterans</li>
+                <li>Active Discord, Facebook, and Messenger groups</li>
+              </ul>
+            </div>
+
+            <!-- Bangla Content (Hidden by default) -->
+            <div id="content-bn" style="display: none">
+              <h3>আমাদের লক্ষ্য</h3>
+              <p>
+                ফার্মিং ওয়ার কমিউনিটি বাংলাদেশ (FWCB) হলো বাংলাদেশের সবচেয়ে বড় এবং সক্রিয় Clash of Clans কমিউনিটি। আমরা ২৫+ টিরও বেশি এলিট ক্ল্যান
+                নিয়ে গঠিত, যেখানে হাজারো খেলোয়াড় একসাথে ফার্মিং, ওয়ার এবং CWL-এ অংশগ্রহণ করে।
+              </p>
+
+              <h3>কেন যোগ দেবেন?</h3>
+              <ul>
+                <li>২৫+ টি সক্রিয় এবং প্রতিযোগিতামূলক ক্ল্যান</li>
+                <li>নিয়মিত Clan War League (CWL) এবং Clan Wars</li>
+                <li>সাপ্তাহিক Clan Capital Raids</li>
+                <li>অভিজ্ঞ খেলোয়াড়দের থেকে গাইডেন্স</li>
+                <li>Discord এবং Facebook গ্রুপে সক্রিয় যোগাযোগ</li>
+              </ul>
+            </div>
+
+            <h3>Direct Contact</h3>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px">
+              <a href="https://chat.whatsapp.com/Kj6wwItrRka1wB98epbBoK" target="_blank" class="btn-ghost"
+                ><i class="ri-whatsapp-line"></i> WhatsApp</a
+              >
+              <a href="https://www.facebook.com/habibcocbd" target="_blank" class="btn-ghost"><i class="ri-facebook-circle-fill"></i> Facebook</a>
+              <a href="https://t.me/fwcbhelp" target="_blank" class="btn-ghost"><i class="ri-telegram-fill"></i> Telegram</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
-    </footer>
-    
+
     <script>
-        // Language Switch Functionality
-        const langEnBtn = document.getElementById('lang-en');
-        const langBnBtn = document.getElementById('lang-bn');
-        const contentEn = document.getElementById('content-en');
-        const contentBn = document.getElementById('content-bn');
-        
-        langEnBtn.addEventListener('click', function() {
-            langEnBtn.classList.add('active');
-            langBnBtn.classList.remove('active');
-            contentEn.classList.add('active');
-            contentBn.classList.remove('active');
-        });
-        
-        langBnBtn.addEventListener('click', function() {
-            langBnBtn.classList.add('active');
-            langEnBtn.classList.remove('active');
-            contentBn.classList.add('active');
-            contentEn.classList.remove('active');
-        });
-        
-        // Mobile Menu Toggle Functionality
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        
-        if (mobileMenuToggle && navMenu) {
-            mobileMenuToggle.addEventListener('click', function() {
-                mobileMenuToggle.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            const navLinks = navMenu.querySelectorAll('a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!mobileMenuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-                    mobileMenuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }
-            });
+      function switchLang(lang) {
+        if (lang === "en") {
+          document.getElementById("content-en").style.display = "block";
+          document.getElementById("content-bn").style.display = "none";
+        } else {
+          document.getElementById("content-en").style.display = "none";
+          document.getElementById("content-bn").style.display = "block";
         }
-        
-        // Home Button Scroll Detection
-        const homeButton = document.querySelector('.home-button');
-        
-        function handleScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Show home button when scrolled down more than 100px
-            if (scrollTop > 100) {
-                homeButton.classList.add('show');
-            } else {
-                homeButton.classList.remove('show');
-            }
-        }
-        
-        // Add scroll event listener
-        window.addEventListener('scroll', handleScroll);
-        
-        // Check initial scroll position
-        handleScroll();
+      }
+
+      // Mobile Menu
+      document.querySelector(".mobile-toggle").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("active");
+      });
     </script>
-</body>
+  </body>
 </html>

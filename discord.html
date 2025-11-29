@@ -1,78 +1,92 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FWCB Discord & Clans</title>
+    <title>Social Hub | FWCB</title>
+
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="discord-styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <h1>FWCB Community</h1>
-        <p>Farming War Community Bangladesh</p>
-      </div>
-      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav-menu" id="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="clans.html">Clans</a></li>
-          <li><a href="discord.html" class="active">Discord & Groups</a></li>
-          <li><a href="bases.html">Bases</a></li>
-          <li><a href="rules.html">Rules</a></li>
-          <li><a href="about.html">About Us</a></li>
+    <header id="navbar">
+      <nav class="glass-panel">
+        <div class="logo">
+          <span class="logo-text">FW<span class="highlight">CB</span></span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+          </li>
+          <li>
+            <a href="clans.html"><i class="ri-shield-star-line"></i> Clans</a>
+          </li>
+          <li>
+            <a href="discord.html" class="active"><i class="ri-discord-line"></i> Social</a>
+          </li>
+          <li>
+            <a href="bases.html"><i class="ri-layout-masonry-line"></i> Bases</a>
+          </li>
+          <li>
+            <a href="rules.html"><i class="ri-book-open-line"></i> Rules</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="ri-team-line"></i> About</a>
+          </li>
         </ul>
+        <div class="mobile-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
       </nav>
     </header>
 
-    <!-- Home Button -->
-    <a href="index.html" class="home-button">
-      <span class="home-icon">🏠</span>
-      <span class="home-text">Home</span>
-    </a>
-
     <main>
-      <section style="padding: 30px 5%">
-        <!-- FWCB Main Box -->
-        <div class="discord-box">
-          <img src="images/fwcb.png" alt="FWCB" />
-          <h2>Farming War Community Bangladesh (FWCB)</h2>
-          <p>Join our community for all Bangladesh Clash of Clans players!</p>
-          <div class="btn-group">
-            <a href="https://www.facebook.com/share/g/19ysq1u8rf/" target="_blank" class="join-btn facebook-join-btn">Facebook Group</a>
-            <a href="https://discord.gg/h2Y88VwQ" target="_blank" class="join-btn discord-join-btn">Discord</a>
-            <a href="https://m.me/cm/AbYRDF6fu0spC2-g/?send_source=cm%3Acopy_invite_link" target="_blank" class="join-btn messenger-join-btn"
-              >Messenger Community</a
-            >
-            <a href="https://band.us/@cocbangladesh" target="_blank" class="join-btn band-join-btn">Band Community</a>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Community <span class="highlight">Hub</span></h1>
+          <p class="page-subtitle">Establish comms. Join the central command or specific division servers.</p>
+
+          <!-- Main Community Box -->
+          <div class="community-main glass-panel">
+            <div class="comm-content">
+              <h3>FWCB Official</h3>
+              <p>The central command for all players. Join for announcements, global chat, and support.</p>
+              <div class="comm-actions">
+                <a href="https://discord.gg/h2Y88VwQ" target="_blank" class="btn-neon"><i class="ri-discord-fill"></i> Discord</a>
+                <a href="https://www.facebook.com/share/g/19ysq1u8rf/" target="_blank" class="btn-ghost"
+                  ><i class="ri-facebook-circle-fill"></i> Facebook</a
+                >
+              </div>
+            </div>
+            <div class="comm-visual">
+              <img src="images/fwcb.png" alt="FWCB Logo" />
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- All Clan Discords -->
-        <div class="section-header">
-          <h2>Clan Discords & Groups</h2>
-          <p>Connect with individual clan communities</p>
-        </div>
-        <div class="clan-discord-grid" id="clan-discord-list">
-          <!-- Clan boxes will be loaded here -->
+      <!-- Division Discords -->
+      <section class="discord-grid-section">
+        <div class="container">
+          <h3 class="section-title">Division Servers</h3>
+          <div id="clan-discord-list" class="grid-layout">
+            <div style="grid-column: 1/-1; text-align: center; color: var(--accent-cyan)">
+              <div class="spinner"></div>
+              <p>Loading frequencies...</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
-    </footer>
+
+    <!-- Specific Script for Discord Page Logic -->
     <script>
       document.addEventListener("DOMContentLoaded", async () => {
         const list = document.getElementById("clan-discord-list");
-        if (!list) return;
 
         try {
-          // Fetch database
+          // Fetch Data
           const response = await fetch("clans.json");
           const clans = await response.json();
 
@@ -81,52 +95,32 @@
 
           list.innerHTML = clans
             .map((clan) => {
-              // If discord link is missing, disable button
               const hasDiscord = clan.discord && clan.discord !== "#";
-              const btnStyle = hasDiscord ? "" : "opacity:0.5; cursor:not-allowed; background:#333 !important;";
-              const btnText = hasDiscord ? "Join Discord" : "No Discord";
-              const link = hasDiscord ? clan.discord : "javascript:void(0)";
-
+              // Using reusable CSS classes from style.css
               return `
-                <div class="clan-discord-card">
-                    <div class="clan-discord-logo" 
-                         style="background-image:url('${clan.badgeUrl}'); background-size:contain; background-repeat:no-repeat; background-color:transparent;">
+                    <div class="clan-card" style="align-items: center; text-align: center;">
+                        <div class="clan-logo" style="background-image:url('${
+                          clan.badgeUrl
+                        }'); width:80px; height:80px; margin-bottom:15px; border:none; background-size:contain; background-repeat:no-repeat;"></div>
+                        <h4 style="margin-bottom:15px; font-family:'Orbitron'; font-size:1.1rem; color: #e6f1ff;">${clan.name}</h4>
+                        ${
+                          hasDiscord
+                            ? `<a href="${clan.discord}" target="_blank" class="btn-neon" style="width:100%; justify-content:center;">Join Server</a>`
+                            : `<button class="btn-ghost" disabled style="width:100%; opacity:0.5; cursor:not-allowed;">Locked</button>`
+                        }
                     </div>
-                    <div class="clan-discord-name">${clan.name}</div>
-                    <a href="${link}" target="_blank" class="join-btn discord-join-btn" style="${btnStyle}">
-                        ${btnText}
-                    </a>
-                </div>
-                `;
+                    `;
             })
             .join("");
         } catch (e) {
           console.error(e);
-          list.innerHTML = "<p style='text-align:center'>Failed to load discord list.</p>";
+          list.innerHTML = "<p style='text-align:center'>Failed to load discord data.</p>";
         }
 
-        // Mobile Menu Logic (Preserved)
-        const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
-        if (mobileMenuToggle && navMenu) {
-          mobileMenuToggle.addEventListener("click", () => {
-            mobileMenuToggle.classList.toggle("active");
-            navMenu.classList.toggle("active");
-          });
-          document.addEventListener("click", (e) => {
-            if (!mobileMenuToggle.contains(e.target) && !navMenu.contains(e.target)) {
-              mobileMenuToggle.classList.remove("active");
-              navMenu.classList.remove("active");
-            }
-          });
-        }
-      });
-
-      // Home Button Scroll Detection
-      const homeButton = document.querySelector(".home-button");
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) homeButton.classList.add("show");
-        else homeButton.classList.remove("show");
+        // Mobile Menu Logic
+        document.querySelector(".mobile-toggle").addEventListener("click", () => {
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
       });
     </script>
   </body>

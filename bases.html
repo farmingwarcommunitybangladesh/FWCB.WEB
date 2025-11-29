@@ -1,804 +1,331 @@
 <!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FWCB Bases</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background: #0a192f;
-            color: #ccd6f6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
-        }
-        .th-section {
-            margin: 30px 0;
-            padding: 25px;
-            background: rgba(10, 25, 47, 0.8);
-            border-radius: 12px;
-            border: 1px solid #1e3a8a;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        }
-        .th-title {
-            color: #64ffda;
-            font-size: 2.4em;
-            margin-bottom: 30px;
-            text-align: center;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-shadow: 0 2px 8px rgba(100, 255, 218, 0.3);
-            position: relative;
-            padding-bottom: 15px;
-        }
-        .th-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: #64ffda;
-            border-radius: 2px;
-        }
-        .base-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
-            gap: 20px;
-            margin-top: 20px;
-            align-items: stretch;
-            justify-content: center;
-        }
-        .farming-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .base-card {
-            background: rgba(30, 41, 59, 0.9);
-            border-radius: 12px;
-            padding: 30px 25px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid rgba(100, 255, 218, 0.1);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-        .base-card:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #64ffda, #a5b4fc);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-        .base-card:hover:before {
-            transform: scaleX(1);
-        }
-        .base-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            border-color: #3b82f6;
-        }
-        .base-card .copy-btn { margin-top: auto; }
-        .base-card .copy-btn, .base-card .active-btn { align-self: stretch; }
-        .base-card h4 { margin: 10px 0 6px; }
-        .base-image {
-            width: 100%;
-            height: 200px;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid #2d3748;
-            transition: all 0.3s ease;
-        }
-        .base-card:hover .base-image {
-            border-color: #3b82f6;
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
-        }
-        .copy-btn, .active-btn {
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: 500;
-            margin: 8px 0;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            width: 100%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .copy-btn:hover, .active-btn:hover {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        .active-btn {
-            background: linear-gradient(135deg, #10b981, #059669);
-        }
-        .active-btn:hover {
-            background: linear-gradient(135deg, #059669, #047857);
-        }
-        .rules-section {
-            background: #2c3e50;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-        }
-        .base-card h3, .base-card h4 {
-            color: #e6f1ff;
-            margin: 10px 0 15px;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        .base-card h3 {
-            color: #64ffda;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid rgba(100, 255, 218, 0.2);
-            letter-spacing: 0.3px;
-        }
-        .base-card:hover h3 {
-            color: #a5b4fc;
-        }
-        .rules-list {
-            list-style: none;
-            padding: 0;
-        }
-        .rules-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .rules-list li:before {
-            content: "✓ ";
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        /* Desktop/Tablet Grid Tweaks */
-        @media (min-width: 1024px) {
-            .war-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 1023px) {
-            .war-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-            .th-section {
-                margin: 20px 0;
-                padding: 15px;
-            }
-            
-            .th-title {
-                font-size: 1.5em;
-                margin-bottom: 15px;
-            }
-            
-            .base-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            
-            .farming-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            
-            .base-card {
-                padding: 15px;
-            }
-            
-            .base-image {
-                width: 150px;
-                height: 150px;
-            }
-            
-            .copy-btn, .active-btn {
-                padding: 8px 16px;
-                font-size: 0.9em;
-                width: 100%;
-                margin-right: 0;
-            }
-            
-            .rules-section {
-                padding: 20px;
-            }
-            
-            .rules-section h3 {
-                font-size: 1.5em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .th-section {
-                margin: 15px 0;
-                padding: 10px;
-            }
-            
-            .base-card {
-                padding: 10px;
-            }
-            
-            .base-image {
-                width: 120px;
-                height: 120px;
-            }
-            
-            .copy-btn, .active-btn {
-                padding: 6px 12px;
-                font-size: 0.8em;
-                width: 100%;
-                margin-right: 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FWCB | Base Blueprints</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  </head>
+  <body>
+    <!-- 1. Navigation -->
+    <header id="navbar">
+      <nav class="glass-panel">
         <div class="logo">
-            <h1>FWCB Community</h1>
-            <p>Farming War Community Bangladesh</p>
+          <span class="logo-text">FW<span class="highlight">CB</span></span>
         </div>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav-menu" id="nav-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="clans.html">Clans</a></li>
-                <li><a href="discord.html">Discord & Groups</a></li>
-                <li><a href="bases.html" class="active">Bases</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+          </li>
+          <li>
+            <a href="clans.html"><i class="ri-shield-star-line"></i> Clans</a>
+          </li>
+          <li>
+            <a href="discord.html"><i class="ri-discord-line"></i> Social</a>
+          </li>
+          <li>
+            <a href="bases.html" class="active"><i class="ri-layout-masonry-line"></i> Bases</a>
+          </li>
+          <li>
+            <a href="rules.html"><i class="ri-book-open-line"></i> Rules</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="ri-team-line"></i> About</a>
+          </li>
+        </ul>
+        <div class="mobile-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
     </header>
-    
-    <!-- Home Button -->
-    <a href="index.html" class="home-button">
-        <span class="home-icon">🏠</span>
-        <span class="home-text">Home</span>
-    </a>
 
     <main>
-        <section style="padding: 30px 5%;">
-            <h2 style="text-align: center; color: #e6f1ff; margin-bottom: 30px; font-size: 2.6em; font-weight: 700; letter-spacing: -0.5px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Farming War Base Links</h2>
-            
-            <!-- Farming Bases Section -->
-            <div style="background: linear-gradient(135deg, rgba(39, 174, 96, 0.9), rgba(46, 204, 113, 0.9)); color: white; padding: 25px; border-radius: 15px; margin: 0 0 40px; text-align: center; box-shadow: 0 10px 30px rgba(39, 174, 96, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
-                <h2 style="margin: 0; font-size: 2.2em;">🌾 Farming Bases</h2>
-                <p style="margin: 10px 0 0; font-size: 1.1em;">Resource collection focused bases for Farming War</p>
-            </div>
+      <!-- 2. Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Tactical <span class="highlight">Blueprints</span></h1>
+          <p class="page-subtitle">Authorized base layouts for Farming Wars (GFL) and League Wars. Select your Town Hall level below.</p>
+        </div>
+      </section>
 
-            <!-- Farming Bases Grid Container -->
-            <div class="th-section">
-                <div class="farming-grid">
-                    <!-- TH11 -->
-                    <div class="base-card">
-                        <h3 style="color: #64ffda; font-size: 1.6em; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Town Hall 11 - Farming Base</h3>
-                        <div class="base-image" style="background-image: url('images/th11.jpg');"></div>
-                        <p style="color: #555; font-size: 1em;">Best for Resource Farming</p>
-                        <button class="copy-btn" onclick="copyBaseLink('th11-farm')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th11-farm')">Active Base</button>
-                    </div>
-                    <!-- TH12 -->
-                    <div class="base-card">
-                        <h3 style="color: #64ffda; font-size: 1.6em; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Town Hall 12 - Farming Base</h3>
-                        <div class="base-image" style="background-image: url('images/th12.jpg');"></div>
-                        <p style="color: #555; font-size: 1em;">Best for Resource Farming</p>
-                        <button class="copy-btn" onclick="copyBaseLink('th12-farm')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th12-farm')">Active Base</button>
-                    </div>
-                    <!-- TH13 -->
-                    <div class="base-card">
-                        <h3 style="color: #64ffda; font-size: 1.6em; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Town Hall 13 - Farming Base</h3>
-                        <div class="base-image" style="background-image: url('images/th13.jpg');"></div>
-                        <p style="color: #555; font-size: 1em;">Best for Resource Farming</p>
-                        <button class="copy-btn" onclick="copyBaseLink('th13-farm')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th13-farm')">Active Base</button>
-                    </div>
-                    <!-- TH14 -->
-                    <div class="base-card">
-                        <h3 style="color: #64ffda; font-size: 1.6em; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Town Hall 14 - Farming Base</h3>
-                        <div class="base-image" style="background-image: url('images/th14.jpg');"></div>
-                        <p style="color: #555; font-size: 1em;">Best for Resource Farming</p>
-                        <button class="copy-btn" onclick="copyBaseLink('th14-farm')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th14-farm')">Active Base</button>
-                    </div>
-                    <!-- TH15 -->
-                    <div class="base-card">
-                        <h3 style="color: #64ffda; font-size: 1.6em; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Town Hall 15 - Farming Base</h3>
-                        <div class="base-image" style="background-image: url('images/th15.jpg');"></div>
-                        <p style="color: #555; font-size: 1em;">Best for Resource Farming</p>
-                        <button class="copy-btn" onclick="copyBaseLink('th15-farm')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th15-farm')">Active Base</button>
-                    </div>
-                    <!-- TH16 -->
-                    <div class="base-card">
-                        <h3 style="color: #64ffda; font-size: 1.6em; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Town Hall 16 - Farming Base</h3>
-                        <div class="base-image" style="background-image: url('images/th16.jpg');"></div>
-                        <p style="color: #555; font-size: 1em;">Best for Resource Farming</p>
-                        <button class="copy-btn" onclick="copyBaseLink('th16-farm')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th16-farm')">Active Base</button>
-                    </div>
-                    <!-- TH17 -->
-                    <div class="base-card">
-                        <h3 style="color: #64ffda; font-size: 1.6em; margin-bottom: 20px; font-weight: 700; letter-spacing: -0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Town Hall 17 - Farming Base</h3>
-                        <div class="base-image" style="background-image: url('images/th17.jpg');"></div>
-                        <p style="color: #555; font-size: 1em;">Best for Resource Farming</p>
-                        <button class="copy-btn" onclick="copyBaseLink('th17-farm')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th17-farm')">Active Base</button>
-                    </div>
+      <!-- 3. The Tabbed Interface -->
+      <section class="bases-interface">
+        <div class="container">
+          <!-- Town Hall Selector (Tabs) -->
+          <div class="th-tabs glass-panel">
+            <button class="th-tab active" onclick="filterBases('all')">All</button>
+            <button class="th-tab" onclick="filterBases('17')">TH17</button>
+            <button class="th-tab" onclick="filterBases('16')">TH16</button>
+            <button class="th-tab" onclick="filterBases('15')">TH15</button>
+            <button class="th-tab" onclick="filterBases('14')">TH14</button>
+            <button class="th-tab" onclick="filterBases('13')">TH13</button>
+            <button class="th-tab" onclick="filterBases('12')">TH12</button>
+            <button class="th-tab" onclick="filterBases('11')">TH11</button>
+            <button class="th-tab" onclick="filterBases('10')">TH10</button>
+            <button class="th-tab" onclick="filterBases('9')">TH9</button>
+          </div>
+
+          <!-- Base Layouts Grid -->
+          <div class="bases-grid" id="bases-container">
+            <!-- ================= TH17 BASES ================= -->
+            <div class="base-card glass-panel" data-th="17" data-type="farm">
+              <div class="base-preview">
+                <img src="images/th17.jpg" alt="TH17 Farming" />
+              </div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH17 Farming</h4>
+                  <span class="tag-farm">Farming</span>
                 </div>
+                <a
+                  href="https://link.clashofclans.com/en?action=OpenLayout&id=TH17%3AWB%3AAAAAAgAAAAL0SUFMNpGhA7EYNooXLk4l"
+                  class="btn-neon full-width"
+                  >Copy Layout</a
+                >
+              </div>
             </div>
-
-            <!-- War & CWL Bases Section -->
-            <div style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; padding: 20px; border-radius: 15px; margin: 40px 0 30px; text-align: center;">
-                <h2 style="margin: 0; font-size: 2.4em; font-weight: 700; letter-spacing: -0.5px; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">⚔️ War & CWL Bases</h2>
-                <p style="margin: 12px 0 0; font-size: 1.2em; opacity: 0.9; font-weight: 400;">Defensive bases for Clan Wars and CWL</p>
-            </div>
-            
-            <!-- TH9 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 9 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th9-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th9-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th9-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th9-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th9-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th9-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th9-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th9-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th9-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th9-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th9-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th9-war4')">Active Base</button>
-                    </div>
+            <!-- TH17 Wars -->
+            <div class="base-card glass-panel" data-th="17" data-type="war">
+              <div class="base-preview"><img src="images/th17-war.png" alt="TH17 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH17 War Base 1</h4>
+                  <span class="tag-war">War</span>
                 </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH17:WAR:123472" class="btn-neon full-width">Copy Layout</a>
+              </div>
             </div>
 
-            <!-- TH10 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 10 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th10-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th10-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th10-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th10-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th10-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th10-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th10-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th10-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th10-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th10-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th10-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th10-war4')">Active Base</button>
-                    </div>
+            <!-- ================= TH16 BASES ================= -->
+            <div class="base-card glass-panel" data-th="16" data-type="farm">
+              <div class="base-preview"><img src="images/th16.jpg" alt="TH16 Farming" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH16 Farming</h4>
+                  <span class="tag-farm">Farming</span>
                 </div>
+                <a
+                  href="https://link.clashofclans.com/en?action=OpenLayout&id=TH16%3AWB%3AAAAAAwAAAALS4aI1VlwftHEX42XGlLZr"
+                  class="btn-neon full-width"
+                  >Copy Layout</a
+                >
+              </div>
             </div>
-
-            <!-- TH11 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 11 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th11-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th11-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th11-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th11-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th11-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th11-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th11-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th11-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th11-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th11-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th11-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th11-war4')">Active Base</button>
-                    </div>
+            <div class="base-card glass-panel" data-th="16" data-type="war">
+              <div class="base-preview"><img src="images/th16-war.png" alt="TH16 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH16 War Base 1</h4>
+                  <span class="tag-war">War</span>
                 </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH16:WAR:123470" class="btn-neon full-width">Copy Layout</a>
+              </div>
             </div>
 
-            <!-- TH12 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 12 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th12-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th12-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th12-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th12-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th12-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th12-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th12-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th12-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th12-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th12-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th12-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th12-war4')">Active Base</button>
-                    </div>
+            <!-- ================= TH15 BASES ================= -->
+            <div class="base-card glass-panel" data-th="15" data-type="farm">
+              <div class="base-preview"><img src="images/th15.jpg" alt="TH15 Farming" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH15 Farming</h4>
+                  <span class="tag-farm">Farming</span>
                 </div>
+                <a
+                  href="https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AWB%3AAAAAKwAAAAJXo-tsMdZB98J3NhSdiAkq"
+                  class="btn-neon full-width"
+                  >Copy Layout</a
+                >
+              </div>
             </div>
-
-            <!-- TH13 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 13 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th13-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th13-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th13-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th13-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th13-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th13-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th13-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th13-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th13-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th13-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th13-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th13-war4')">Active Base</button>
-                    </div>
+            <div class="base-card glass-panel" data-th="15" data-type="war">
+              <div class="base-preview"><img src="images/th15-war.png" alt="TH15 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH15 War Base 1</h4>
+                  <span class="tag-war">War</span>
                 </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH15:WAR:123468" class="btn-neon full-width">Copy Layout</a>
+              </div>
             </div>
 
-            <!-- TH14 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 14 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th14-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th14-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th14-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th14-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th14-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th14-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th14-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th14-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th14-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th14-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th14-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th14-war4')">Active Base</button>
-                    </div>
+            <!-- ================= TH14 BASES ================= -->
+            <div class="base-card glass-panel" data-th="14" data-type="farm">
+              <div class="base-preview"><img src="images/th14.jpg" alt="TH14 Farming" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH14 Farming</h4>
+                  <span class="tag-farm">Farming</span>
                 </div>
+                <a
+                  href="https://link.clashofclans.com/en?action=OpenLayout&id=TH14%3AWB%3AAAAACwAAAAKPredQRfFAzMMeoG7KdALi"
+                  class="btn-neon full-width"
+                  >Copy Layout</a
+                >
+              </div>
             </div>
-
-            <!-- TH15 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 15 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th15-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th15-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th15-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th15-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th15-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th15-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th15-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th15-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th15-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th15-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th15-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th15-war4')">Active Base</button>
-                    </div>
+            <div class="base-card glass-panel" data-th="14" data-type="war">
+              <div class="base-preview"><img src="images/th14-war.png" alt="TH14 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH14 War Base 1</h4>
+                  <span class="tag-war">War</span>
                 </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH14:WAR:123466" class="btn-neon full-width">Copy Layout</a>
+              </div>
             </div>
 
-            <!-- TH16 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 16 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th16-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th16-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th16-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th16-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th16-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th16-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th16-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th16-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th16-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th16-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th16-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th16-war4')">Active Base</button>
-                    </div>
+            <!-- ================= TH13 BASES ================= -->
+            <div class="base-card glass-panel" data-th="13" data-type="farm">
+              <div class="base-preview"><img src="images/th13.jpg" alt="TH13 Farming" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH13 Farming</h4>
+                  <span class="tag-farm">Farming</span>
                 </div>
+                <a
+                  href="https://link.clashofclans.com/en?action=OpenLayout&id=TH13%3AWB%3AAAAAQgAAAAIWODTV3cHR7wJzCKeryI6m"
+                  class="btn-neon full-width"
+                  >Copy Layout</a
+                >
+              </div>
             </div>
-
-            <!-- TH17 War Section -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 17 - War Bases</h3>
-            <div class="base-grid war-grid">
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th17-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th17-war1')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th17-war1')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th17-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th17-war2')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th17-war2')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th17-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th17-war3')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th17-war3')">Active Base</button>
-                    </div>
-                    <div class="base-card">
-                        <div class="base-image" style="background-image: url('images/th17-war.png');"></div>
-                        <h4>War Base</h4>
-                        <button class="copy-btn" onclick="copyBaseLink('th17-war4')">Copy Base Link</button>
-                        <button class="active-btn" onclick="openBaseInGame('th17-war4')">Active Base</button>
-                    </div>
+            <div class="base-card glass-panel" data-th="13" data-type="war">
+              <div class="base-preview"><img src="images/th13-war.png" alt="TH13 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH13 War Base 1</h4>
+                  <span class="tag-war">War</span>
                 </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH13:WAR:123464" class="btn-neon full-width">Copy Layout</a>
+              </div>
             </div>
 
-            <!-- TH18 Upcoming -->
-            <div class="th-section">
-                <h3 class="th-title">Town Hall 18 (Coming Soon)</h3>
-                <div style="text-align: center; padding: 40px; background: linear-gradient(45deg, #f39c12, #e67e22); color: white; border-radius: 10px;">
-                    <h4>🚀 Town Hall 18 Bases Coming Soon!</h4>
-                    <p>We're preparing the best TH18 base designs for our community.</p>
+            <!-- ================= TH12 BASES ================= -->
+            <div class="base-card glass-panel" data-th="12" data-type="farm">
+              <div class="base-preview"><img src="images/th12.jpg" alt="TH12 Farming" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH12 Farming</h4>
+                  <span class="tag-farm">Farming</span>
                 </div>
+                <a
+                  href="https://link.clashofclans.com/en?action=OpenLayout&id=TH12%3AWB%3AAAAAKQAAAAJqDMYjn7fnIw5QrRF22S-u"
+                  class="btn-neon full-width"
+                  >Copy Layout</a
+                >
+              </div>
+            </div>
+            <div class="base-card glass-panel" data-th="12" data-type="war">
+              <div class="base-preview"><img src="images/th12-war.png" alt="TH12 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH12 War Base 1</h4>
+                  <span class="tag-war">War</span>
+                </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH12:WAR:123462" class="btn-neon full-width">Copy Layout</a>
+              </div>
             </div>
 
-            
+            <!-- ================= TH11 BASES ================= -->
+            <div class="base-card glass-panel" data-th="11" data-type="farm">
+              <div class="base-preview"><img src="images/th11.jpg" alt="TH11 Farming" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH11 Farming</h4>
+                  <span class="tag-farm">Farming</span>
+                </div>
+                <a
+                  href="https://link.clashofclans.com/en?action=OpenLayout&id=TH11%3AWB%3AAAAAIAAAAAJlPnP5hZd_u2lD2hgAeJeg"
+                  class="btn-neon full-width"
+                  >Copy Layout</a
+                >
+              </div>
+            </div>
+            <div class="base-card glass-panel" data-th="11" data-type="war">
+              <div class="base-preview"><img src="images/th11-war.png" alt="TH11 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH11 War Base 1</h4>
+                  <span class="tag-war">War</span>
+                </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH11:WAR:123460" class="btn-neon full-width">Copy Layout</a>
+              </div>
+            </div>
 
-        </section>
+            <!-- ================= TH10 BASES (WAR ONLY) ================= -->
+            <div class="base-card glass-panel" data-th="10" data-type="war">
+              <div class="base-preview"><img src="images/th10-war.png" alt="TH10 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH10 War Base 1</h4>
+                  <span class="tag-war">War</span>
+                </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH10:WAR:123458" class="btn-neon full-width">Copy Layout</a>
+              </div>
+            </div>
+
+            <!-- ================= TH9 BASES (WAR ONLY) ================= -->
+            <div class="base-card glass-panel" data-th="9" data-type="war">
+              <div class="base-preview"><img src="images/th9-war.png" alt="TH9 War" /></div>
+              <div class="base-info">
+                <div class="base-header">
+                  <h4>TH9 War Base 1</h4>
+                  <span class="tag-war">War</span>
+                </div>
+                <a href="https://link.clashofclans.com/en?action=OpenLayout&id=TH9:WAR:123456" class="btn-neon full-width">Copy Layout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
-    </footer>
-
+    <!-- Base Filtering Logic -->
     <script>
-        // Base links data (you can update these with actual base links)
-        const baseLinks = {
-            // War Bases
-            'th9-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH9:WAR:123456',
-            'th9-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH9:CWL:123457',
-            'th9-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH9:WAR:223456',
-            'th9-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH9:CWL:223457',
-            'th10-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH10:WAR:123458',
-            'th10-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH10:CWL:123459',
-            'th10-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH10:WAR:223458',
-            'th10-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH10:CWL:223459',
-            'th11-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH11:WAR:123460',
-            'th11-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH11:CWL:123461',
-            'th11-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH11:WAR:223460',
-            'th11-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH11:CWL:223461',
-            'th12-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH12:WAR:123462',
-            'th12-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH12:CWL:123463',
-            'th12-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH12:WAR:223462',
-            'th12-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH12:CWL:223463',
-            'th13-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH13:WAR:123464',
-            'th13-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH13:CWL:123465',
-            'th13-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH13:WAR:223464',
-            'th13-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH13:CWL:223465',
-            'th14-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH14:WAR:123466',
-            'th14-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH14:CWL:123467',
-            'th14-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH14:WAR:223466',
-            'th14-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH14:CWL:223467',
-            'th15-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH15:WAR:123468',
-            'th15-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH15:CWL:123469',
-            'th15-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH15:WAR:223468',
-            'th15-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH15:CWL:223469',
-            'th16-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH16:WAR:123470',
-            'th16-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH16:CWL:123471',
-            'th16-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH16:WAR:223470',
-            'th16-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH16:CWL:223471',
-            'th17-war1': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH17:WAR:123472',
-            'th17-war2': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH17:CWL:123473',
-            'th17-war3': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH17:WAR:223472',
-            'th17-war4': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH17:CWL:223473',
-            
-            // Farming Bases
-            'th11-farm': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH11%3AWB%3AAAAAIAAAAAJlPnP5hZd_u2lD2hgAeJeg',
-            'th12-farm': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH12%3AWB%3AAAAAKQAAAAJqDMYjn7fnIw5QrRF22S-u',
-            'th13-farm': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH13%3AWB%3AAAAAQgAAAAIWODTV3cHR7wJzCKeryI6m',
-            'th14-farm': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH14%3AWB%3AAAAACwAAAAKPredQRfFAzMMeoG7KdALi',
-            'th15-farm': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AWB%3AAAAAKwAAAAJXo-tsMdZB98J3NhSdiAkq',
-            'th16-farm': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH16%3AWB%3AAAAAAwAAAALS4aI1VlwftHEX42XGlLZr',
-            'th17-farm': 'https://link.clashofclans.com/en?action=OpenLayout&id=TH17%3AWB%3AAAAAAgAAAAL0SUFMNpGhA7EYNooXLk4l'
-        };
+      function filterBases(thLevel) {
+        // 1. Highlight active button
+        document.querySelectorAll(".th-tab").forEach((btn) => btn.classList.remove("active"));
+        const activeBtn = Array.from(document.querySelectorAll(".th-tab")).find((b) => b.textContent.includes(thLevel === "all" ? "All" : thLevel));
+        if (activeBtn) activeBtn.classList.add("active");
 
-        function copyBaseLink(baseId) {
-            const baseLink = baseLinks[baseId];
-            if (baseLink) {
-                navigator.clipboard.writeText(baseLink).then(function() {
-                    alert('Base link copied to clipboard! Paste it in Clash of Clans to use this base.');
-                }).catch(function() {
-                    // Fallback for older browsers
-                    const textArea = document.createElement('textarea');
-                    textArea.value = baseLink;
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textArea);
-                    alert('Base link copied to clipboard! Paste it in Clash of Clans to use this base.');
-                });
-            } else {
-                alert('Base link not available yet. Please check back later.');
-            }
-        }
-
-        function openBaseInGame(baseId) {
-            const baseLink = baseLinks[baseId];
-            if (baseLink) {
-                // Try to open the link directly in Clash of Clans
-                window.open(baseLink, '_blank');
-            } else {
-                alert('Base link not available yet. Please check back later.');
-            }
-        }
-
-        // Mobile Menu Toggle Functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-            const navMenu = document.getElementById('nav-menu');
-            
-            if (mobileMenuToggle && navMenu) {
-                mobileMenuToggle.addEventListener('click', function() {
-                    mobileMenuToggle.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                });
-                
-                // Close menu when clicking on a link
-                const navLinks = navMenu.querySelectorAll('a');
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
-                        mobileMenuToggle.classList.remove('active');
-                        navMenu.classList.remove('active');
-                    });
-                });
-                
-                // Close menu when clicking outside
-                document.addEventListener('click', function(event) {
-                    if (!mobileMenuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-                        mobileMenuToggle.classList.remove('active');
-                        navMenu.classList.remove('active');
-                    }
-                });
-            }
+        // 2. Filter elements with Animation
+        const cards = document.querySelectorAll(".base-card");
+        cards.forEach((card) => {
+          if (thLevel === "all" || card.getAttribute("data-th") === thLevel) {
+            card.style.display = "block";
+            // Small animation reset
+            card.style.opacity = "0";
+            card.style.transform = "translateY(10px)";
+            setTimeout(() => {
+              card.style.transition = "all 0.4s ease";
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+            }, 50);
+          } else {
+            card.style.display = "none";
+          }
         });
-        
-        // Home Button Scroll Detection
-        const homeButton = document.querySelector('.home-button');
-        
-        function handleScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Show home button when scrolled down more than 100px
-            if (scrollTop > 100) {
-                homeButton.classList.add('show');
-            } else {
-                homeButton.classList.remove('show');
-            }
-        }
-        
-        // Add scroll event listener
-        window.addEventListener('scroll', handleScroll);
-        
-        // Check initial scroll position
-        handleScroll();
+      }
+
+      // Mobile Menu Reuse
+      const mobileMenuToggle = document.querySelector(".mobile-toggle");
+      const navMenu = document.querySelector(".nav-links");
+      if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+        });
+      }
+
+      // Initialize Tilt on Cards (3D Effect)
+      VanillaTilt.init(document.querySelectorAll(".base-card"), {
+        max: 5,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+      });
     </script>
-</body>
+  </body>
 </html>

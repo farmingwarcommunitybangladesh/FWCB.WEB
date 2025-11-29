@@ -1,76 +1,68 @@
 <!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Elite Clans - Farming War Bangladesh Community</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clans | FWCB</title>
 
-<header>
-    <div class="logo">
-        <h1>FWCB Community</h1>
-        <p>Farming War Community Bangladesh</p>
-    </div>
-    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav class="nav-menu" id="nav-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="clans.html" class="active">Clans</a></li>
-            <li><a href="discord.html">Discord & Groups</a></li>
-            <li><a href="bases.html">Bases</a></li>
-            <li><a href="rules.html">Rules</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!-- Home Button -->
-<a href="index.html" class="home-button">
-    <span class="home-icon">🏠</span>
-    <span class="home-text">Home</span>
-</a>
-
-<main>
-    <section id="clans" class="clans-section">
-        <h2>Our Elite Clans</h2>
-        <div class="clan-grid" id="clan-list">
-            <p>Loading Clan Data...</p>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="glass-panel">
+        <div class="logo">
+          <span class="logo-text">FW<span class="highlight">CB</span></span>
         </div>
-    </section>
-</main>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+          </li>
+          <li>
+            <a href="clans.html" class="active"><i class="ri-shield-star-line"></i> Clans</a>
+          </li>
+          <li>
+            <a href="discord.html"><i class="ri-discord-line"></i> Social</a>
+          </li>
+          <li>
+            <a href="bases.html"><i class="ri-layout-masonry-line"></i> Bases</a>
+          </li>
+          <li>
+            <a href="rules.html"><i class="ri-book-open-line"></i> Rules</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="ri-team-line"></i> About</a>
+          </li>
+        </ul>
+        <div class="mobile-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
+    </header>
 
-<footer>
-    <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
-</footer>
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Active <span class="highlight">Divisions</span></h1>
+          <p class="page-subtitle">Real-time intelligence on all allied units. Access operational data below.</p>
 
-<script src="script.js"></script>
-<script>
-    // Home Button Scroll Detection
-    const homeButton = document.querySelector('.home-button');
-    
-    function handleScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Show home button when scrolled down more than 100px
-        if (scrollTop > 100) {
-            homeButton.classList.add('show');
-        } else {
-            homeButton.classList.remove('show');
-        }
-    }
-    
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-    
-    // Check initial scroll position
-    handleScroll();
-</script>
-</body>
+          <!-- Command Bar (Search) Container -->
+          <div id="command-bar-container" class="search-container"></div>
+        </div>
+      </section>
+
+      <!-- The Grid -->
+      <section class="clans-grid-section">
+        <div class="container">
+          <div id="clan-list" class="grid-layout">
+            <!-- JS will inject holographic cards here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,98 +1,81 @@
 <!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clan Details</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clan Details | FWCB</title>
+
+    <!-- 1. The Master Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- 2. Google Fonts (Orbitron for headers, Inter for text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- 3. Remix Icons (High Quality Icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Floating Navigation -->
+    <header id="navbar">
+      <nav class="glass-panel">
         <div class="logo">
-            <h1>FWCB Community</h1>
-            <p>Farming War Community Bangladesh</p>
+          <span class="logo-text">FW<span class="highlight">CB</span></span>
         </div>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav-menu" id="nav-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="clans.html">Clans</a></li>
-                <li><a href="discord.html">Discord & Groups</a></li>
-                <li><a href="bases.html">Bases</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="ri-home-4-line"></i> Home</a>
+          </li>
+          <li>
+            <a href="clans.html" class="active"><i class="ri-shield-star-line"></i> Clans</a>
+          </li>
+          <li>
+            <a href="discord.html"><i class="ri-discord-line"></i> Social</a>
+          </li>
+          <li>
+            <a href="bases.html"><i class="ri-layout-masonry-line"></i> Bases</a>
+          </li>
+          <li>
+            <a href="rules.html"><i class="ri-book-open-line"></i> Rules</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="ri-team-line"></i> About</a>
+          </li>
+        </ul>
+        <div class="mobile-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
     </header>
-    
-    <!-- Home Button -->
-    <a href="index.html" class="home-button">
-        <span class="home-icon">🏠</span>
-        <span class="home-text">Home</span>
-    </a>
-    
+
     <main>
-        <section id="clan-details">
-            <div id="clan-details-content">
-                <p>Loading...</p>
-            </div>
-        </section>
+      <section id="clan-details">
+        <div id="clan-details-content">
+          <!-- Loader -->
+          <div style="text-align: center; padding: 150px 0; color: var(--accent-cyan)">
+            <div class="spinner"></div>
+            <p style="margin-top: 15px">Loading Intelligence...</p>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
+      <p style="text-align: center; padding: 20px; color: var(--text-muted)">&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
     </footer>
+
     <script src="details.js"></script>
     <script>
-        // Mobile Menu Toggle Functionality
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        
-        if (mobileMenuToggle && navMenu) {
-            mobileMenuToggle.addEventListener('click', function() {
-                mobileMenuToggle.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            const navLinks = navMenu.querySelectorAll('a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!mobileMenuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-                    mobileMenuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }
-            });
-        }
-        
-        // Home Button Scroll Detection
-        const homeButton = document.querySelector('.home-button');
-        
-        function handleScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Show home button when scrolled down more than 100px
-            if (scrollTop > 100) {
-                homeButton.classList.add('show');
-            } else {
-                homeButton.classList.remove('show');
-            }
-        }
-        
-        // Add scroll event listener
-        window.addEventListener('scroll', handleScroll);
-        
-        // Check initial scroll position
-        handleScroll();
+      // Mobile Menu Logic (Inline as backup)
+      const mobileMenuToggle = document.querySelector(".mobile-toggle");
+      const navMenu = document.querySelector(".nav-links");
+
+      if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
