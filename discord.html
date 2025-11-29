@@ -1,199 +1,133 @@
 <!DOCTYPE html>
 <html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FWCB Discord & Clans</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="discord-styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="discord-styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <h1>FWCB Community</h1>
-            <p>Farming War Community Bangladesh</p>
-        </div>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav-menu" id="nav-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="clans.html">Clans</a></li>
-                <li><a href="discord.html" class="active">Discord & Groups</a></li>
-                <li><a href="bases.html">Bases</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <h1>FWCB Community</h1>
+        <p>Farming War Community Bangladesh</p>
+      </div>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clans.html">Clans</a></li>
+          <li><a href="discord.html" class="active">Discord & Groups</a></li>
+          <li><a href="bases.html">Bases</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
-    
+
     <!-- Home Button -->
     <a href="index.html" class="home-button">
-        <span class="home-icon">🏠</span>
-        <span class="home-text">Home</span>
+      <span class="home-icon">🏠</span>
+      <span class="home-text">Home</span>
     </a>
-    
-    <main>
-        <section style="padding: 30px 5%;">
-            <!-- FWCB Main Box -->
-            <div class="discord-box">
-                <img src="images/fwcb.png" alt="FWCB">
-                <h2>Farming War Community Bangladesh (FWCB)</h2>
-                <p>Join our community for all Bangladesh Clash of Clans players!</p>
-                <div class="btn-group">
-                    <a href="https://www.facebook.com/share/g/19ysq1u8rf/" target="_blank" class="join-btn facebook-join-btn">Facebook Group</a>
-                    <a href="https://discord.gg/h2Y88VwQ" target="_blank" class="join-btn discord-join-btn">Discord</a>
-                    <a href="https://m.me/cm/AbYRDF6fu0spC2-g/?send_source=cm%3Acopy_invite_link" target="_blank" class="join-btn messenger-join-btn">Messenger Community</a>
-                    <a href="https://band.us/@cocbangladesh" target="_blank" class="join-btn band-join-btn">Band Community</a>
-                </div>
-            </div>
 
-            <!-- All Clan Discords -->
-            <div class="section-header">
-                <h2>Clan Discords & Groups</h2>
-                <p>Connect with individual clan communities</p>
-            </div>
-            <div class="clan-discord-grid" id="clan-discord-list">
-                <!-- Clan boxes will be loaded here -->
-            </div>
-        </section>
+    <main>
+      <section style="padding: 30px 5%">
+        <!-- FWCB Main Box -->
+        <div class="discord-box">
+          <img src="images/fwcb.png" alt="FWCB" />
+          <h2>Farming War Community Bangladesh (FWCB)</h2>
+          <p>Join our community for all Bangladesh Clash of Clans players!</p>
+          <div class="btn-group">
+            <a href="https://www.facebook.com/share/g/19ysq1u8rf/" target="_blank" class="join-btn facebook-join-btn">Facebook Group</a>
+            <a href="https://discord.gg/h2Y88VwQ" target="_blank" class="join-btn discord-join-btn">Discord</a>
+            <a href="https://m.me/cm/AbYRDF6fu0spC2-g/?send_source=cm%3Acopy_invite_link" target="_blank" class="join-btn messenger-join-btn"
+              >Messenger Community</a
+            >
+            <a href="https://band.us/@cocbangladesh" target="_blank" class="join-btn band-join-btn">Band Community</a>
+          </div>
+        </div>
+
+        <!-- All Clan Discords -->
+        <div class="section-header">
+          <h2>Clan Discords & Groups</h2>
+          <p>Connect with individual clan communities</p>
+        </div>
+        <div class="clan-discord-grid" id="clan-discord-list">
+          <!-- Clan boxes will be loaded here -->
+        </div>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
+      <p>&copy; 2025 Farming War Bangladesh Community. All rights reserved.</p>
     </footer>
     <script>
-        // Clans data from the clans page - maintaining exact order
-        const clansData = [
-            {name:"Black Daku 1", logo:"blackdaku1.jpeg"},
-            {name:"WAR HERO™", logo:"warhero.jpg"},
-            {name:"ICØNIC BØYS", logo:"iconicboys.jpeg"},
-            {name:"BLACK DAIMOND", logo:"blackdiamond.jpeg"},
-            {name:"ROYAL FIGHTER", logo:"royalfighter.jpeg"},
-            {name:"silent killer", logo:"silentkiller.jpeg"},
-            {name:"GANGSTAR 2K15™", logo:"gangstar.jpeg"},
-            {name:"SARKER EMPIRE", logo:"sarkerempire.jpeg"},
-            {name:"Abdullah's clan", logo:"abdullahsclan.jpeg"},
-            {name:"BANGLADASH CLAN", logo:"bangladeshclan.jpeg"},
-            {name:"Miracle Vibes", logo:"miraclevibes.jpeg"},
-            {name:"SHOWTIME", logo:"showtime.jpeg"},
-            {name:"BD DEATH SAW", logo:"bddeathsaw.jpeg"},
-            {name:"AVENGERS", logo:"AVENGERS.jpeg"},
-            {name:"BANGLADESH", logo:"bangladesh.jpeg"},
-            {name:"Bangladesh", logo:"Bangladesh (2).jpeg"},
-            {name:"BD Army 71", logo:"bdarmy71.jpeg"},
-            {name:"THE AVENGERS", logo:"theavengers.jpeg"},
-            {name:"BUI Clashers", logo:"buiclasher.jpeg"},
-            {name:"Blue Star", logo:"bluestar.jpeg"},
-            {name:"BD FIGHTER", logo:"bdfighter.jpeg"},
-            {name:"Noakhali Clan", logo:"noakhaliclan.jpeg"},
-            {name:"CTG SUPER CLAN", logo:"ctgsuperclan.jpeg"},
-            {name:"The Lion Empire", logo:"thelionempire.jpeg"},
-            {name:"Angry Bøy's™", logo:"angryboys.jpeg"},
-            {name:"BD CLASHER", logo:"bdclasher.jpg"},
-            {name:"THE DARK DIVINE", logo:"thedarkdivine.jpg"}
-        ];
+      document.addEventListener("DOMContentLoaded", async () => {
+        const list = document.getElementById("clan-discord-list");
+        if (!list) return;
 
-        // Discord links for all clans
-        const existingLinks = {
-            "Black Daku 1": "https://discord.gg/pep5ZTm7",
-            "WAR HERO™": "https://discord.gg/zXB5kTCu",
-            "ICØNIC BØYS": "https://discord.gg/fMffwjRy",
-            "BLACK DAIMOND": "https://discord.gg/fwcb",
-            "ROYAL FIGHTER": "https://discord.gg/fwcb",
-            "silent killer": "https://discord.gg/silentkiller",
-            "GANGSTAR 2K15™": "https://discord.gg/gangstar",
-            "SARKER EMPIRE": "https://discord.gg/sarkerempire",
-            "Abdullah's clan": "https://discord.gg/abdullahsclan",
-            "BANGLADASH CLAN": "https://discord.gg/bangladeshclan",
-            "Miracle Vibes": "https://discord.gg/miraclevibes",
-            "SHOWTIME": "https://discord.gg/showtime",
-            "BD DEATH SAW": "https://discord.gg/bddeathsaw",
-            "AVENGERS": "https://discord.gg/avengers",
-            "BANGLADESH": "https://discord.gg/bangladesh",
-            "Bangladesh": "https://discord.gg/bangladesh2",
-            "BD Army 71": "https://discord.gg/bdarmy71",
-            "THE AVENGERS": "https://discord.gg/theavengers",
-            "BUI Clashers": "https://discord.gg/buiclashers",
-            "Blue Star": "https://discord.gg/bluestar",
-            "BD FIGHTER": "https://discord.gg/bdfighter",
-            "Noakhali Clan": "https://discord.gg/noakhali",
-            "CTG SUPER CLAN": "https://discord.gg/ctgsuperclan",
-            "The Lion Empire": "https://discord.gg/thelionempire",
-            "Angry Bøy's™": "https://discord.gg/angryboys",
-            "BD CLASHER": "https://discord.gg/bdclasher",
-            "THE DARK DIVINE": "https://discord.gg/fwcb"
-        };
+        try {
+          // Fetch database
+          const response = await fetch("clans.json");
+          const clans = await response.json();
 
-        // Create final clans array with Discord links while maintaining original order
-        const finalClans = clansData.map(clan => ({
-            ...clan,
-            discord: existingLinks[clan.name] || "#"
-        }));
+          // Sort by Level
+          clans.sort((a, b) => b.level - a.level);
 
-        // Generate clan cards with proper error handling for missing images
-        const clanList = document.getElementById('clan-discord-list');
-        clanList.innerHTML = finalClans.map(clan => `
-            <div class="clan-discord-card">
-                <div class="clan-discord-logo" style="background-image:url('images/${clan.logo}'), url('images/default-clan.png')" 
-                     onerror="this.style.backgroundImage='url(images/default-clan.png)'"></div>
-                <div class="clan-discord-name">${clan.name}</div>
-                <a href="${clan.discord}" target="_blank" class="join-btn discord-join-btn" 
-                   ${clan.discord === '#' ? 'style="opacity:0.7; pointer-events:none;"' : ''}>
-                    ${clan.discord === '#' ? 'Coming Soon' : 'Join Discord'}
-                </a>
-            </div>
-        `).join('');
+          list.innerHTML = clans
+            .map((clan) => {
+              // If discord link is missing, disable button
+              const hasDiscord = clan.discord && clan.discord !== "#";
+              const btnStyle = hasDiscord ? "" : "opacity:0.5; cursor:not-allowed; background:#333 !important;";
+              const btnText = hasDiscord ? "Join Discord" : "No Discord";
+              const link = hasDiscord ? clan.discord : "javascript:void(0)";
 
-        // Mobile Menu Toggle Functionality
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        
+              return `
+                <div class="clan-discord-card">
+                    <div class="clan-discord-logo" 
+                         style="background-image:url('${clan.badgeUrl}'); background-size:contain; background-repeat:no-repeat; background-color:transparent;">
+                    </div>
+                    <div class="clan-discord-name">${clan.name}</div>
+                    <a href="${link}" target="_blank" class="join-btn discord-join-btn" style="${btnStyle}">
+                        ${btnText}
+                    </a>
+                </div>
+                `;
+            })
+            .join("");
+        } catch (e) {
+          console.error(e);
+          list.innerHTML = "<p style='text-align:center'>Failed to load discord list.</p>";
+        }
+
+        // Mobile Menu Logic (Preserved)
+        const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
         if (mobileMenuToggle && navMenu) {
-            mobileMenuToggle.addEventListener('click', function() {
-                mobileMenuToggle.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            const navLinks = navMenu.querySelectorAll('a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!mobileMenuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-                    mobileMenuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }
-            });
-        }
-        
-        // Home Button Scroll Detection
-        const homeButton = document.querySelector('.home-button');
-        
-        function handleScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Show home button when scrolled down more than 100px
-            if (scrollTop > 100) {
-                homeButton.classList.add('show');
-            } else {
-                homeButton.classList.remove('show');
+          mobileMenuToggle.addEventListener("click", () => {
+            mobileMenuToggle.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          });
+          document.addEventListener("click", (e) => {
+            if (!mobileMenuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+              mobileMenuToggle.classList.remove("active");
+              navMenu.classList.remove("active");
             }
+          });
         }
-        
-        // Add scroll event listener
-        window.addEventListener('scroll', handleScroll);
-        
-        // Check initial scroll position
-        handleScroll();
+      });
+
+      // Home Button Scroll Detection
+      const homeButton = document.querySelector(".home-button");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) homeButton.classList.add("show");
+        else homeButton.classList.remove("show");
+      });
     </script>
-</body>
+  </body>
 </html>
