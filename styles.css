@@ -948,9 +948,9 @@ h1 .highlight {
   margin-bottom: 20px;
 }
 
-/* 11. CLAN DETAILS PAGE STYLES */
+/* 11. CLAN DETAILS PAGE STYLES (UPDATED) */
 .clan-details-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 40px auto;
   padding-top: var(--nav-height);
 }
@@ -985,61 +985,87 @@ h1 .highlight {
 .clan-name-detail {
   font-size: 2.5rem;
   margin-bottom: 5px;
+  line-height: 1.1;
 }
 
-.clan-level-detail {
-  display: inline-block;
-  padding: 5px 15px;
-  background: rgba(100, 255, 218, 0.1);
-  color: var(--accent-cyan);
+.location-badge {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 10px;
   border-radius: 20px;
-  font-weight: 700;
-  font-family: "Orbitron", sans-serif;
-  margin-top: 10px;
 }
 
-.clan-stats-grid {
+.label-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.clan-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  color: var(--accent-cyan);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.clan-label img {
+  width: 16px;
+  height: 16px;
+}
+
+/* THE MEGA GRID DASHBOARD */
+.stats-mega-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px; /* Gap creates the border lines */
+  background: rgba(255, 255, 255, 0.05); /* Color of the lines */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.data-column {
+  background: var(--bg-dark); /* Restore background color */
   padding: 30px;
 }
 
-.stat-item {
-  background: rgba(255, 255, 255, 0.03);
-  padding: 20px;
-  border-radius: 12px;
+.col-title {
+  color: var(--accent-cyan);
+  font-size: 1.1rem;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  transition: var(--transition);
-}
-
-.stat-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-  transform: translateY(-3px);
-}
-
-.stat-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.stat-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  color: var(--text-muted);
+  gap: 10px;
   text-transform: uppercase;
 }
 
-.stat-value {
-  font-size: 1.2rem;
-  font-weight: 700;
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  font-size: 0.95rem;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+}
+
+.data-row span {
+  color: var(--text-muted);
+}
+
+.data-row strong {
   color: var(--text-main);
 }
 
@@ -1047,7 +1073,6 @@ h1 .highlight {
   display: flex;
   gap: 15px;
   padding: 30px;
-  border-top: 1px solid var(--glass-border);
 }
 
 .btn-visit-clan,
@@ -1058,6 +1083,10 @@ h1 .highlight {
   text-align: center;
   transition: var(--transition);
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .btn-visit-clan {
@@ -1069,11 +1098,37 @@ h1 .highlight {
   box-shadow: 0 0 20px var(--accent-glow);
 }
 
+@media (max-width: 900px) {
+  .stats-mega-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    background: transparent;
+    padding: 20px;
+  }
+
+  .data-column {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .clan-card-header-detail {
     flex-direction: column;
     text-align: center;
   }
+
+  .clan-info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .label-container {
+    justify-content: center;
+  }
+
   .clan-actions {
     flex-direction: column;
   }

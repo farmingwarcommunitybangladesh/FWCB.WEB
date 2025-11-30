@@ -3,12 +3,47 @@
     "tag": "#RY2J98PL",
     "name": "Black Daku 1",
     "level": 27,
-    "points": 111295,
-    "members": 49,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/VlYIZgEWlST2mHhFBKTJpIhav_j3hmJDr3JmV70l8bc.png",
+    "description": "‎●─────亗🌍Official GFL 🌍亗─────●  ‎➤;Welcome To BD🇧🇩 Farming War Clan↶ ‎●───⪻Join ********* Group⪼───● ‎Family Clans:#2YP80VGLU,#2GJJ9YLQL",
+    "points": 69800,
+    "versusPoints": 0,
+    "warWins": 225,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "‎●─────亗🌍Official GFL 🌍亗─────●  ‎➤;Welcome To BD🇧🇩 Farming War Clan↶ ‎●───⪻Join ********* Group⪼───● ‎Family Clans:#2YP80VGLU,#2GJJ9YLQL",
+    "type": "inviteOnly",
+    "requiredTrophies": 0,
+    "requiredTownhall": 14,
+    "members": 31,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/pep5ZTm7",
     "facebook": "https://www.facebook.com/habibcocbd"
   },
@@ -16,12 +51,47 @@
     "tag": "#20G0Q0J20",
     "name": "WAR HERO™",
     "level": 25,
-    "points": 86200,
-    "members": 48,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/fOJMB-Ebx6ioLsirE4O-HdUNEnud8j4K-RepDcAY3tk.png",
+    "description": "🌍 GFL OFFICIAL 🌍 #FWCB 🇧🇩",
+    "points": 48850,
+    "versusPoints": 0,
+    "warWins": 267,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Master League I",
     "capitalHall": 10,
-    "description": "🌍 GFL OFFICIAL 🌍 #FWCB 🇧🇩",
+    "type": "inviteOnly",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 34,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/zXB5kTCu",
     "facebook": "https://www.facebook.com/whziiihad"
   },
@@ -29,12 +99,47 @@
     "tag": "#2G0JRQVOC",
     "name": "ICØNIC BØYS",
     "level": 15,
-    "points": 82600,
-    "members": 45,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/lZVVzOvWFvo_CGOwg46m_Ax6BDhFlI7Zn-cUZ09xmjU.png",
+    "description": "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ 🇧🇩 ʙᴅ ᴄʟᴀɴ ⚔OFFICIAL GFL🌍\n🔸ᴘᴀʀᴛɪᴄɪᴘᴀᴛᴇ ɪɴ ᴡᴀʀꜱ ʀᴇɢᴜʟᴀʀʟʏ.🔸ɴᴏᴛɪꜰʏ ᴜꜱ ɪɴ ᴄᴀꜱᴇ ʏᴏᴜ ɴᴏᴛ ᴘᴀʀᴛɪᴄɪᴘᴀᴛɪɴɢ.🔸ᴍᴜꜱᴛ ᴅᴏ ᴄʟᴀɴ ɢᴀᴍᴇꜱ & ʀᴀɪᴅ ᴀᴛᴛᴀᴄᴋ.🔸ᴋɪᴄᴋ ᴏᴜᴛ ᴅᴜᴇ ᴛᴏ 7 ᴅᴀʏꜱ",
+    "points": 37500,
+    "versusPoints": 0,
+    "warWins": 47,
+    "warWinStreak": 1,
+    "warFrequency": "always",
     "warLeague": "Master League II",
     "capitalHall": 9,
-    "description": "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ 🇧🇩 ʙᴅ ᴄʟᴀɴ ⚔OFFICIAL GFL🌍\n🔸ᴘᴀʀᴛɪᴄɪᴘᴀᴛᴇ ɪɴ ᴡᴀʀꜱ ʀᴇɢᴜʟᴀʀʟʏ.🔸ɴᴏᴛɪꜰʏ ᴜꜱ ɪɴ ᴄᴀꜱᴇ ʏᴏᴜ ɴᴏᴛ ᴘᴀʀᴛɪᴄɪᴘᴀᴛɪɴɢ.🔸ᴍᴜꜱᴛ ᴅᴏ ᴄʟᴀɴ ɢᴀᴍᴇꜱ & ʀᴀɪᴅ ᴀᴛᴛᴀᴄᴋ.🔸ᴋɪᴄᴋ ᴏᴜᴛ ᴅᴜᴇ ᴛᴏ 7 ᴅᴀʏꜱ",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 12,
+    "members": 25,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/fMffwjRy",
     "facebook": "https://www.facebook.com/zubairmuhammadzami.003"
   },
@@ -42,12 +147,47 @@
     "tag": "#29PCY892U",
     "name": "BLACK DAIMOND",
     "level": 22,
-    "points": 79000,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/wd2_YqHAodFoJLuv4tKnW4Nb6XIu577HgddcBOfrbrA.png",
+    "description": "‎●─────亗🌍Official GFL 🌍亗─────●  ‎➤;Welcome To BD🇧🇩 Farming War Clan↶ ‎●───⪻Join Massanger Group⪼───● ‎Family Clans:#2YP80VGLU,#2GJJ9YLQL,#RY2J98PL",
+    "points": 68550,
+    "versusPoints": 0,
+    "warWins": 141,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "‎●─────亗🌍Official GFL 🌍亗─────●  ‎➤;Welcome To BD🇧🇩 Farming War Clan↶ ‎●───⪻Join Massanger Group⪼───● ‎Family Clans:#2YP80VGLU,#2GJJ9YLQL,#RY2J98PL",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 43,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/fwcb",
     "facebook": "https://www.facebook.com/habibcocbd"
   },
@@ -55,12 +195,47 @@
     "tag": "#2GJJ9YLQL",
     "name": "ROYAL FIGHTER",
     "level": 21,
-    "points": 90542,
-    "members": 49,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/EmLqgT0hbfUgqO7e_HG7UQZBQJP8etWorTLBPZ_X59Q.png",
+    "description": "‎●─────亗🌍Official GFL 🌍 \n➤Welcome To BD🇧🇩 Farming War Clan↶\n➤MESSENGER - https://m.me/j/AbZkOv6eRcAomQEv/\nT.D. - XiN⚡ OCT. Family clans#2YP80VGLU,#RY2J98PL,#29PCY892U",
+    "points": 70150,
+    "versusPoints": 0,
+    "warWins": 166,
+    "warWinStreak": 3,
+    "warFrequency": "always",
     "warLeague": "Crystal League II",
     "capitalHall": 10,
-    "description": "‎●─────亗🌍Official GFL 🌍 \n➤Welcome To BD🇧🇩 Farming War Clan↶\n➤MESSENGER - https://m.me/j/AbZkOv6eRcAomQEv/\nT.D. - XiN⚡ OCT. Family clans#2YP80VGLU,#RY2J98PL,#29PCY892U",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 5,
+    "members": 40,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/fwcb",
     "facebook": "https://www.facebook.com/habibcocbd"
   },
@@ -68,12 +243,47 @@
     "tag": "#2YP80VGLU",
     "name": "silent killer",
     "level": 17,
-    "points": 96691,
-    "members": 47,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/BKmNdrKpqTztIKAQo77S-MhZGyMTUvXUtjpYP_4pXWU.png",
+    "description": "‎●─────亗🌍Official GFL 🌍亗─────●  ‎➤;Welcome To BD🇧🇩 Farming War Clan↶ ‎●───⪻Join Massanger Group⪼───● ‎Family Clans:#RY2J98PL,#2GJJ9YLQL,",
+    "points": 92203,
+    "versusPoints": 0,
+    "warWins": 112,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "‎●─────亗🌍Official GFL 🌍亗─────●  ‎➤;Welcome To BD🇧🇩 Farming War Clan↶ ‎●───⪻Join Massanger Group⪼───● ‎Family Clans:#RY2J98PL,#2GJJ9YLQL,",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 42,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/silentkiller",
     "facebook": "https://www.facebook.com/habibcocbd"
   },
@@ -81,12 +291,47 @@
     "tag": "#Y2G2C2RL",
     "name": "GANGSTAR 2K15™",
     "level": 37,
-    "points": 94650,
-    "members": 49,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/4w75ZzROmzx-iG0EAOXRi6p5YjC_BtN-5Rq_ak93CQM.png",
+    "description": "‎●──────亗🌍Official GFL 🌍亗──────● \n‎➤; Welcome To Farming War Clan.↶\n‎B🇧🇩A🇧🇩N🇧🇩G🇧🇩L🇧🇩A🇧🇩D🇧🇩E🇧🇩S🇧🇩H\n‎Proud Of Mymensingh 😎",
+    "points": 88950,
+    "versusPoints": 0,
+    "warWins": 891,
+    "warWinStreak": 1,
+    "warFrequency": "always",
     "warLeague": "Master League II",
     "capitalHall": 10,
-    "description": "‎●──────亗🌍Official GFL 🌍亗──────● \n‎➤; Welcome To Farming War Clan.↶\n‎B🇧🇩A🇧🇩N🇧🇩G🇧🇩L🇧🇩A🇧🇩D🇧🇩E🇧🇩S🇧🇩H\n‎Proud Of Mymensingh 😎",
+    "type": "inviteOnly",
+    "requiredTrophies": 0,
+    "requiredTownhall": 1,
+    "members": 46,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000004,
+        "name": "Clan Games",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/gangstar",
     "facebook": "https://www.facebook.com/talapatara.sepa.i.819104"
   },
@@ -94,12 +339,47 @@
     "tag": "#2GYRPL999",
     "name": "SARKER EMPiRE",
     "level": 25,
-    "points": 82100,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/G_33JrNP1QfkJ_cVGMv2-Nux4FF_Di4dU5ps77SxmJM.png",
+    "description": "‎●─────亗🌍Official GFL 🌍亗─────● \n‎➤;Welcome To BD🇧🇩 Farming War Clan↶\n‎●───⪻Join Messenger Group⪼───●\n‎Family Clan: S.A. DONATE MAST #PUVJJLJY",
+    "points": 82200,
+    "versusPoints": 0,
+    "warWins": 134,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Master League III",
     "capitalHall": 10,
-    "description": "‎●─────亗🌍Official GFL 🌍亗─────● \n‎➤;Welcome To BD🇧🇩 Farming War Clan↶\n‎●───⪻Join Messenger Group⪼───●\n‎Family Clan: S.A. DONATE MAST #PUVJJLJY",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 12,
+    "members": 50,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000015,
+        "name": "Newbie Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/3oOuYkPdkjWVrBUITgByz9Ur0nmJ4GsERXc-1NUrjKg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/3oOuYkPdkjWVrBUITgByz9Ur0nmJ4GsERXc-1NUrjKg.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/sarkerempire",
     "facebook": "https://www.facebook.com/SaifullahCoC"
   },
@@ -107,12 +387,47 @@
     "tag": "#2Q0LVQUYL",
     "name": "Abdullah's clan",
     "level": 28,
-    "points": 99000,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/CvsOi7aOYQEvL9-Ird9oGAIhnFJ4cnhY2Luv5399awk.png",
+    "description": "‎●─────亗🌍Official GFL 🌍亗─────● \n‎➤;Welcome To BD🇧🇩 Farming War Clan↶\n‎●───⪻Join Massanger Group⪼───●",
+    "points": 97100,
+    "versusPoints": 0,
+    "warWins": 292,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "‎●─────亗🌍Official GFL 🌍亗─────● \n‎➤;Welcome To BD🇧🇩 Farming War Clan↶\n‎●───⪻Join Massanger Group⪼───●",
+    "type": "inviteOnly",
+    "requiredTrophies": 0,
+    "requiredTownhall": 13,
+    "members": 48,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/abdullahsclan",
     "facebook": "https://www.facebook.com/md.abdullah.298871?mibextid=ZbWKwL"
   },
@@ -120,12 +435,47 @@
     "tag": "#20CV0Y92U",
     "name": "BANGLADASH CLAN",
     "level": 17,
-    "points": 77600,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/75v1HLGKU1Bx2TKBurUBaOTr3ZRomP49Pzf0ZQ6w3do.png",
+    "description": "‎●──────亗🌍Official GFL 🌍亗──────● \n‎➤; Welcome To Farming War Clan.↶\n‎B🇧🇩A🇧🇩N🇧🇩G🇧🇩L🇧🇩A🇧🇩D🇧🇩E🇧🇩S🇧🇩H\n‎●────亗Join Massanger Group亗────●",
+    "points": 76850,
+    "versusPoints": 0,
+    "warWins": 116,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League II",
     "capitalHall": 10,
-    "description": "‎●──────亗🌍Official GFL 🌍亗──────● \n‎➤; Welcome To Farming War Clan.↶\n‎B🇧🇩A🇧🇩N🇧🇩G🇧🇩L🇧🇩A🇧🇩D🇧🇩E🇧🇩S🇧🇩H\n‎●────亗Join Massanger Group亗────●",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 12,
+    "members": 49,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bangladeshclan",
     "facebook": "https://www.facebook.com/share/1Chg6DCMbv/"
   },
@@ -133,12 +483,47 @@
     "tag": "#2GLOYLCCC",
     "name": "Miracle Vibes",
     "level": 17,
-    "points": 82200,
-    "members": 48,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/bZa60tkIWN_o9sfRuuUCAZwVQSaStIN_i6cuuVDAW48.png",
+    "description": "BANGLADESH OFFICIAL GFL CLAN",
+    "points": 85400,
+    "versusPoints": 0,
+    "warWins": 68,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Master League III",
     "capitalHall": 10,
-    "description": "BANGLADESH OFFICIAL GFL CLAN",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 15,
+    "members": 50,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/miraclevibes",
     "facebook": "https://www.facebook.com/shahin.imam.399"
   },
@@ -146,12 +531,47 @@
     "tag": "#2RU229RCQ",
     "name": "SHOWTIME",
     "level": 11,
-    "points": 0,
-    "members": 1,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/gQmoAHhVkuJFddMqp5s4xhnkrQpt8as4aFBPoJmoolM.png",
+    "description": "BANGLADESH GFL OFFICIAL",
+    "points": 0,
+    "versusPoints": 0,
+    "warWins": 26,
+    "warWinStreak": 0,
+    "warFrequency": "unknown",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "BANGLADESH GFL OFFICIAL",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 1,
+    "location": "Nauru",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000009,
+        "name": "Donations",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/RauzS-02tv4vWm1edZ-q3gPQGWKGANLZ-85HCw_NVP0.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/RauzS-02tv4vWm1edZ-q3gPQGWKGANLZ-85HCw_NVP0.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/showtime",
     "facebook": "https://www.facebook.com/shahin.imam.399"
   },
@@ -159,12 +579,47 @@
     "tag": "#PUVRUOGG",
     "name": "BD DEATH SAW",
     "level": 19,
-    "points": 85900,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/k259baguMLg1I8onjXeO0vlIYQ3nufVsBH5sDlRpd_E.png",
+    "description": "💎✨ OFFICIAL FWA ✨💎\n⚔️ Show FWA base upon entry (under 12hr)\n📜 Follow the clan mails & rules\n💬 WP: 0I6 • 86 • 6I • 0I65",
+    "points": 49000,
+    "versusPoints": 0,
+    "warWins": 396,
+    "warWinStreak": 2,
+    "warFrequency": "always",
     "warLeague": "Unranked",
     "capitalHall": 10,
-    "description": "💎✨ OFFICIAL FWA ✨💎\n⚔️ Show FWA base upon entry (under 12hr)\n📜 Follow the clan mails & rules\n💬 WP: 0I6 • 86 • 6I • 0I65",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 41,
+    "location": "Lesotho",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000002,
+        "name": "Trophy Pushing",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hNtigjuwJjs6PWhVtVt5HvJgAp4ZOMO8e2nyjHX29sA.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hNtigjuwJjs6PWhVtVt5HvJgAp4ZOMO8e2nyjHX29sA.png"
+        }
+      },
+      {
+        "id": 56000004,
+        "name": "Clan Games",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bddeathsaw",
     "facebook": "https://www.facebook.com/shahriar.arifen.2025"
   },
@@ -172,12 +627,47 @@
     "tag": "#2Q8RPY2UY",
     "name": "AVENGERS",
     "level": 30,
-    "points": 69750,
-    "members": 49,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/GhTb7BEM_hjxWW-KNl61Fo-NovEHFfqF8Er6zfI5dRI.png",
+    "description": "OFFICIAL🌍 GFL 🌍 CLAN...Join & activate GFL base... show your base & stay.🌵 Or you will get kick🦿👍.....clan Established (11/09/2021)........cwl th 17 only.     #FWCB🇧🇩",
+    "points": 64250,
+    "versusPoints": 0,
+    "warWins": 342,
+    "warWinStreak": 1,
+    "warFrequency": "always",
     "warLeague": "Master League I",
     "capitalHall": 10,
-    "description": "OFFICIAL🌍 GFL 🌍 CLAN...Join & activate GFL base... show your base & stay.🌵 Or you will get kick🦿👍.....clan Established (11/09/2021)........cwl th 17 only.     #FWCB🇧🇩",
+    "type": "open",
+    "requiredTrophies": 2000,
+    "requiredTownhall": 6,
+    "members": 45,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000004,
+        "name": "Clan Games",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png"
+        }
+      },
+      {
+        "id": 56000013,
+        "name": "Relaxed",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/avengers",
     "facebook": "https://www.facebook.com/share/1CoDaaARsX/"
   },
@@ -185,12 +675,47 @@
     "tag": "#280P00J8P",
     "name": "BANGLADESH",
     "level": 31,
-    "points": 96130,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/YJk1k6U4hzQMnfkWO04RrWwjtNsNz9shFDAy91hspkE.png",
+    "description": "🌎GFL/FWA/FWL🌎              36 July 2024🇧🇩🇧🇩🇧🇩",
+    "points": 94781,
+    "versusPoints": 0,
+    "warWins": 297,
+    "warWinStreak": 1,
+    "warFrequency": "always",
     "warLeague": "Master League III",
     "capitalHall": 10,
-    "description": "🌎GFL/FWA/FWL🌎              36 July 2024🇧🇩🇧🇩🇧🇩",
+    "type": "inviteOnly",
+    "requiredTrophies": 600,
+    "requiredTownhall": 8,
+    "members": 50,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000009,
+        "name": "Donations",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/RauzS-02tv4vWm1edZ-q3gPQGWKGANLZ-85HCw_NVP0.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/RauzS-02tv4vWm1edZ-q3gPQGWKGANLZ-85HCw_NVP0.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bangladesh",
     "facebook": "https://www.facebook.com/share/1Chg6DCMbv/"
   },
@@ -198,12 +723,47 @@
     "tag": "#8J8P88CP",
     "name": "Bangladesh",
     "level": 31,
-    "points": 79700,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/YJk1k6U4hzQMnfkWO04RrWwjtNsNz9shFDAy91hspkE.png",
+    "description": "BD 🇧🇩  🌍 GFL🌍Team\nMust Follow Clan MaiL ➡️ Active in War🔥Capital Raid🔥Clan Games🔥Join our Massanger Group Just Type  on your browser ➡️  https://bit.ly/group_bdclan ↩️",
+    "points": 73400,
+    "versusPoints": 0,
+    "warWins": 594,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "BD 🇧🇩  🌍 GFL🌍Team\nMust Follow Clan MaiL ➡️ Active in War🔥Capital Raid🔥Clan Games🔥Join our Massanger Group Just Type  on your browser ➡️  https://bit.ly/group_bdclan ↩️",
+    "type": "inviteOnly",
+    "requiredTrophies": 0,
+    "requiredTownhall": 12,
+    "members": 42,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      },
+      {
+        "id": 56000014,
+        "name": "Competitive",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/DhBE-1SSnrZQtsfjVHyNW-BTBWMc8Zoo34MNRCNiRsA.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/DhBE-1SSnrZQtsfjVHyNW-BTBWMc8Zoo34MNRCNiRsA.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bangladesh2",
     "facebook": "https://www.facebook.com/share/14KvZyWpeuA/"
   },
@@ -211,12 +771,47 @@
     "tag": "#2YU2PCUR2",
     "name": "BD Army 71",
     "level": 20,
-    "points": 90500,
-    "members": 48,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/apyooA63PhLPyZts4GeywqE1zyg_kObUY__Sd2cTeEg.png",
+    "description": "Official 🌏GFL🌏\n🌏Show base upon on entry🌏\n🌏Follow the clan mail🌏",
+    "points": 85900,
+    "versusPoints": 0,
+    "warWins": 117,
+    "warWinStreak": 1,
+    "warFrequency": "always",
     "warLeague": "Master League I",
     "capitalHall": 10,
-    "description": "Official 🌏GFL🌏\n🌏Show base upon on entry🌏\n🌏Follow the clan mail🌏",
+    "type": "inviteOnly",
+    "requiredTrophies": 0,
+    "requiredTownhall": 13,
+    "members": 44,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000013,
+        "name": "Relaxed",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bdarmy71",
     "facebook": "https://www.facebook.com/share/1B6iGR4D5Z/"
   },
@@ -224,12 +819,22 @@
     "tag": "#2QJ2QLCOR",
     "name": "THE AVENGERS",
     "level": 21,
-    "points": 92550,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/4g0uq8nOFqRE-gm93HcIPBTSrCBztrS8QZWn2sX0eaw.png",
+    "description": "🌍🇧🇩ᴏꜰꜰɪᴄɪᴀʟ GFL🇧🇩🌍\n🟡ꜱʜᴏᴡ🌍GFL🌍ʙᴀꜱᴇ ᴜᴘᴏɴ ᴇɴᴛʀʏ.\n🟡ᴍᴜꜱᴛ ɴᴇᴇᴅ ᴛᴏ ꜰᴏʟʟᴏᴡ ᴀʟʟ ᴄʟᴀɴ ᴍᴀɪʟ\n🟡ꜰᴀᴍɪʟʏ ᴄʟᴀɴ: BLACK PREDATOR (#2JQYQ2CR0)",
+    "points": 91650,
+    "versusPoints": 0,
+    "warWins": 132,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Unranked",
     "capitalHall": 10,
-    "description": "🌍🇧🇩ᴏꜰꜰɪᴄɪᴀʟ GFL🇧🇩🌍\n🟡ꜱʜᴏᴡ🌍GFL🌍ʙᴀꜱᴇ ᴜᴘᴏɴ ᴇɴᴛʀʏ.\n🟡ᴍᴜꜱᴛ ɴᴇᴇᴅ ᴛᴏ ꜰᴏʟʟᴏᴡ ᴀʟʟ ᴄʟᴀɴ ᴍᴀɪʟ\n🟡ꜰᴀᴍɪʟʏ ᴄʟᴀɴ: BLACK PREDATOR (#2JQYQ2CR0)",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 10,
+    "members": 48,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [],
     "discord": "https://discord.gg/theavengers",
     "facebook": "https://www.facebook.com/firoz.nur"
   },
@@ -237,12 +842,47 @@
     "tag": "#QG0GG0QP",
     "name": "BUI Clashers",
     "level": 27,
-    "points": 100681,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/MOB1nzttnpnQxBC-O_Is0yOAn4l1qctwb1TxDruRNkU.png",
+    "description": "Official 🌏GFL🌏\n🌏Show base upon on entry🌏\n🌏Follow the clan mail🌏\n- Ally of BD Army 71.",
+    "points": 97589,
+    "versusPoints": 0,
+    "warWins": 447,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Master League I",
     "capitalHall": 10,
-    "description": "Official 🌏GFL🌏\n🌏Show base upon on entry🌏\n🌏Follow the clan mail🌏\n- Ally of BD Army 71.",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 14,
+    "members": 49,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/buiclashers",
     "facebook": "https://www.facebook.com/mhmd.nylwy.hsyn"
   },
@@ -250,12 +890,47 @@
     "tag": "#9JVV8RC8",
     "name": "Blue Star",
     "level": 38,
-    "points": 90700,
-    "members": 49,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/hP_7NQ8fm2ZJggUnuLSMDWVG7-O9kFbn7hRhPHHWtXg.png",
+    "description": "Highest LvL gfl🌎Apply in dc- fxvx",
+    "points": 85400,
+    "versusPoints": 0,
+    "warWins": 603,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Champion League II",
     "capitalHall": 10,
-    "description": "Highest LvL gfl🌎Apply in dc- fxvx",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 45,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      },
+      {
+        "id": 56000013,
+        "name": "Relaxed",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bluestar",
     "facebook": "https://www.facebook.com/Robiul4483"
   },
@@ -263,12 +938,47 @@
     "tag": "#J9RCY8UG",
     "name": "CHATKHIL clan",
     "level": 34,
-    "points": 92176,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/67c3m14xYLAncjYkgS__64bYoDv5HTRL6KI7HskvfN8.png",
+    "description": "🍀OFFICIAL FWL 1945🍀 💎 FWA 💎 🔴Show FWA base upon entry🔴Follow all the clan mails🔴 use both attack in war 🔴 our 2nd clan BD FIGHTER #RCCGRPY8 🇧🇩  3rd clan Noakhali Clan #29L2GJ0RU",
+    "points": 91512,
+    "versusPoints": 0,
+    "warWins": 532,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "🍀OFFICIAL FWL 1945🍀 💎 FWA 💎 🔴Show FWA base upon entry🔴Follow all the clan mails🔴 use both attack in war 🔴 our 2nd clan BD FIGHTER #RCCGRPY8 🇧🇩  3rd clan Noakhali Clan #29L2GJ0RU",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 13,
+    "members": 49,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/chatkhilclan",
     "facebook": "https://www.facebook.com/pu1996"
   },
@@ -276,12 +986,47 @@
     "tag": "#RCCGRPY8",
     "name": "BD FIGHTER",
     "level": 34,
-    "points": 77100,
-    "members": 50,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/wfE8SvEl7s9MJc-5hEc_l15GV0bQc6CJ1jZphfJKo54.png",
+    "description": "🍀OFFICIAL FWL 1945🍀 💎 FWA 💎 🔴 Show FWA base upon entry 🔴 Follow all the clan mails🔴use both attack in war 🔴 our 2nd clan CHATKHIL clan #J9RCY8UG 🍼 3rd clan Noakhali Clan #29L2GJ0RU ...",
+    "points": 74500,
+    "versusPoints": 0,
+    "warWins": 488,
+    "warWinStreak": 1,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "🍀OFFICIAL FWL 1945🍀 💎 FWA 💎 🔴 Show FWA base upon entry 🔴 Follow all the clan mails🔴use both attack in war 🔴 our 2nd clan CHATKHIL clan #J9RCY8UG 🍼 3rd clan Noakhali Clan #29L2GJ0RU ...",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 13,
+    "members": 48,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000013,
+        "name": "Relaxed",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bdfighter",
     "facebook": "https://www.facebook.com/pu1996"
   },
@@ -290,19 +1035,59 @@
     "name": "Unknown Clan",
     "level": 0,
     "badgeUrl": "images/logo.png",
+    "warLeague": "Unranked",
+    "capitalHall": 0,
+    "points": 0,
+    "members": 0,
     "discord": "https://discord.gg/noakhali",
-    "facebook": "https://www.facebook.com/pu1996"
+    "facebook": "https://www.facebook.com/pu1996",
+    "labels": []
   },
   {
     "tag": "#Q2UJ8LPP",
     "name": "CTG SUPER CLAN",
     "level": 19,
-    "points": 12500,
-    "members": 12,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/qZvw0-uSSJEZEuoDbEPHFl6a0tbyqZqnBU7iP3CniB0.png",
+    "description": "🌍 OFFICIAL GFL 🌍   \n1.MUST SHOW GFL BASE ON ENTRY        2.  DAILY ACTIVE \n3. FOLLOW CLAN MAIBOX.                          4.ECO FRIENDLY",
+    "points": 10300,
+    "versusPoints": 0,
+    "warWins": 407,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League II",
     "capitalHall": 8,
-    "description": "🌍 OFFICIAL GFL 🌍   \n1.MUST SHOW GFL BASE ON ENTRY        2.  DAILY ACTIVE \n3. FOLLOW CLAN MAIBOX.                          4.ECO FRIENDLY",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 15,
+    "members": 11,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000010,
+        "name": "Friendly",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/hM7SHnN0x7syFa-s6fE7LzeO5yWG2sfFpZUHuzgMwQg.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/ctgsuperclan",
     "facebook": "https://www.facebook.com/muhammad.arfatuddin.11"
   },
@@ -310,12 +1095,47 @@
     "tag": "#2LCLQPJYR",
     "name": "The Lion Empire",
     "level": 19,
-    "points": 83500,
-    "members": 48,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/RwnYt115kEVauog4HaUKo39b5TmwZOp6cfVwvzHdXZg.png",
+    "description": "●───OFFICAL🌎GFL/FWA/FWL🌎───● \n‎Farming War Community Bangladesh (FWCB)🇧🇩\n‎➤; Must Follow Our All Clan mails",
+    "points": 84400,
+    "versusPoints": 0,
+    "warWins": 105,
+    "warWinStreak": 1,
+    "warFrequency": "always",
     "warLeague": "Crystal League II",
     "capitalHall": 10,
-    "description": "●───OFFICAL🌎GFL/FWA/FWL🌎───● \n‎Farming War Community Bangladesh (FWCB)🇧🇩\n‎➤; Must Follow Our All Clan mails",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 49,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/thelionempire",
     "facebook": "https://www.facebook.com/shahin.imam.399"
   },
@@ -323,12 +1143,47 @@
     "tag": "#20QJQ0JCR",
     "name": "Ângry Bøy's ™",
     "level": 14,
-    "points": 2500,
-    "members": 11,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/pATv0wastHgRgGiHTrn_idqtPaK2CjfyKhxkFDkEQ4U.png",
+    "description": "🌍🌍  GFL OFFICIAL CLAN  🌍🌍 \n🌍🌍  GLOBAL FARMING LEAGUE  🌍🌍\n🌍🌍  POWERED FWCB  🌍🌍\nPART OF  \" BD BOSS \"  \" #2QCG8RU2C \"",
+    "points": 12950,
+    "versusPoints": 0,
+    "warWins": 159,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Master League III",
     "capitalHall": 7,
-    "description": "🌍🌍  GFL OFFICIAL CLAN  🌍🌍 \n🌍🌍  GLOBAL FARMING LEAGUE  🌍🌍\n🌍🌍  POWERED FWCB  🌍🌍\nPART OF  \" BD BOSS \"  \" #2QCG8RU2C \"",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 14,
+    "members": 16,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000013,
+        "name": "Relaxed",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Kv1MZQfd5A7DLwf1Zw3tOaUiwQHGMwmRpjZqOalu_hI.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/angryboys",
     "facebook": "https://www.facebook.com/sajidur2017"
   },
@@ -336,12 +1191,47 @@
     "tag": "#2JRRPRU89",
     "name": "BD CLASHER",
     "level": 12,
-    "points": 72250,
-    "members": 49,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/9TzTM-R9S3uH0Tuw_XyVkFXi-5_9mSv8ttyTuNfoJ70.png",
+    "description": "★一一一一亗🌍 Official GFL 🌍亗一一一一★     ➢Welcome to BD🇧🇩 Farming War Clan.      ➢WELCOME TO BD CLASHER🚀",
+    "points": 68550,
+    "versusPoints": 0,
+    "warWins": 33,
+    "warWinStreak": 2,
+    "warFrequency": "always",
     "warLeague": "Master League III",
     "capitalHall": 8,
-    "description": "★一一一一亗🌍 Official GFL 🌍亗一一一一★     ➢Welcome to BD🇧🇩 Farming War Clan.      ➢WELCOME TO BD CLASHER🚀",
+    "type": "open",
+    "requiredTrophies": 0,
+    "requiredTownhall": 6,
+    "members": 47,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000000,
+        "name": "Clan Wars",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/lXaIuoTlfoNOY5fKcQGeT57apz1KFWkN9-raxqIlMbE.png"
+        }
+      },
+      {
+        "id": 56000008,
+        "name": "Farming",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/iLWz6AiaIHg_DqfG6s9vAxUJKb-RsPbSYl_S0ii9GAM.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/bdclasher",
     "facebook": "https://www.facebook.com/profile.php?id=61551719798176"
   },
@@ -349,12 +1239,47 @@
     "tag": "#G90LJCGY",
     "name": "THE DARK DIVINE",
     "level": 21,
-    "points": 78500,
-    "members": 49,
     "badgeUrl": "https://api-assets.clashofclans.com/badges/200/Cbal0SXAUxTFUsLag6SVrqBsFhAfrPfk9nAANTqQTMM.png",
+    "description": "🌍 Welcome to the GFL clan 💰🌍",
+    "points": 75200,
+    "versusPoints": 0,
+    "warWins": 234,
+    "warWinStreak": 0,
+    "warFrequency": "always",
     "warLeague": "Crystal League I",
     "capitalHall": 10,
-    "description": "🌍 Welcome to the GFL clan 💰🌍",
+    "type": "inviteOnly",
+    "requiredTrophies": 0,
+    "requiredTownhall": 2,
+    "members": 43,
+    "location": "Western Sahara",
+    "chatLanguage": "English",
+    "labels": [
+      {
+        "id": 56000001,
+        "name": "Clan War League",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/5w60_3bdtYUe9SM6rkxBRyV_8VvWw_jTlDS5ieU3IsI.png"
+        }
+      },
+      {
+        "id": 56000004,
+        "name": "Clan Games",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/7qU7tQGERiVITVG0CPFov1-BnFldu4bMN2gXML5bLIU.png"
+        }
+      },
+      {
+        "id": 56000016,
+        "name": "Clan Capital",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/labels/64/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png",
+          "medium": "https://api-assets.clashofclans.com/labels/128/Odg2DaLfhMgQOci4QvHovdoYq4SDiBrocWS2Bjm8Ah8.png"
+        }
+      }
+    ],
     "discord": "https://discord.gg/fwcb",
     "facebook": "https://www.facebook.com/share/17RvUPAVa2/"
   }
