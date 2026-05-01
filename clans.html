@@ -64,33 +64,9 @@
     </main>
     <div id="modern-clan-list" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;"></div>
 
-<script>
-  // clans.json থেকে ডেটা নিয়ে আসার কোড
-  fetch('clans.json')
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('modern-clan-list');
-      let output = '';
-      
-      data.forEach(clan => {
-        output += `
-          <div style="background: #1e1e1e; color: white; padding: 20px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
-            <img src="${clan.badgeUrl}" alt="${clan.name}" style="width: 100px; height: 100px; margin-bottom: 10px;">
-            <h3 style="margin: 0; color: #ffcc00; font-family: sans-serif;">${clan.name}</h3>
-            <p style="margin: 5px 0; font-family: sans-serif;"><strong>Tag:</strong> ${clan.tag}</p>
-            <p style="margin: 5px 0; font-family: sans-serif;"><strong>Level:</strong> ${clan.level}</p>
-            <p style="margin: 5px 0; font-family: sans-serif;"><strong>League:</strong> ${clan.warLeague}</p>
-          </div>
-        `;
-      });
-      
-      container.innerHTML = output;
-    })
-    .catch(error => console.error('Error loading clans:', error));
-</script>
+
     <script src="script.js"></script>
   </body>
 
-  <script src="live-update.js"></script>
-  <div id="clans-container"></div>
+
 </html>
